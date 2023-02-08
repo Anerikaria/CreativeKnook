@@ -1,0 +1,54 @@
+@import 'abstracts/function';
+@import 'abstracts/mixins';
+@import 'abstracts/variable';
+
+@import 'base/animation';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+@import 'base/validations';
+
+@import 'components/directorIntro';
+@import 'components/whyUs';
+@import 'components/philosophy';
+@import 'components/testimonial';
+@import 'components/_curriculum';
+@import 'components/_composition';
+@import 'components/philosophy';
+@import 'components/_bg-video';
+@import 'components/button';
+@import 'components/_otherlinks';
+@import 'components/_CCSResult';
+
+@import 'pages/home.scss';
+@import 'pages/about';
+@import 'pages/_whyUs';
+@import "pages/_faq's";
+@import 'pages/_contactUS';
+@import 'pages/_meetTeam';
+@import 'pages/_career';
+@import 'pages/_covid19';
+@import 'pages/education';
+
+@import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/footer';
+
+//Navigation style to put in sync everything used this style
+@include navigation-style;
+
+//used mixin-include here, to put the header after the navigation and
+// compiled in css excatly like this.
+@include header-style;
+
+@include section-intro;
+
+@include section-whyus;
+
+@include section-philosophy;
+
+@include section-testimonial;
+
+@include section-curriculum;
+
+@include footer-style;

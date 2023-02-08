@@ -1,0 +1,54 @@
+.otherlinks {
+  display: flex;
+  justify-content: space-evenly;
+  &__link {
+    box-shadow: $box-shadow;
+    a {
+      padding: 5rem 7rem;
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      font-size: $font-size-element;
+      font-family: $font-family-some;
+      font-weight: bold;
+      @include respond(normal) {
+        padding: 4.4rem 6.3rem;
+      }
+      @include respond(tab-land) {
+        padding: 4.2rem 6rem;
+        justify-content: space-between;
+      }
+      @include respond(tab-port) {
+        margin-top: 2rem;
+        padding: 3rem 4rem;
+      }
+      @include respond(phone) {
+        padding: 2rem 3rem;
+      }
+    }
+  }
+  &__link1 {
+    border: 0.5rem ridge $color-tertiary-darker;
+    border-radius: $border-radius-headerReverse;
+    background-color: $color-tertiary;
+    a {
+      color: $color-tertiary-darker;
+    }
+  }
+  &__link2 {
+    border: 0.5rem ridge $color-like-nav;
+    border-radius: 5rem;
+    background-color: #f997964d;
+    a {
+      color: $color-like-nav;
+    }
+  }
+  &__link3 {
+    border: 0.5rem ridge #f9a434;
+    border-radius: $border-radius-header;
+    background-color: #d59d5427;
+    a {
+      color: #d59d54;
+    }
+  }
+}

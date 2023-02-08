@@ -1,0 +1,123 @@
+.header__description {
+  h1 {
+    font-size: $font-size-normal-title;
+    color: $color-primary;
+    font-family: $font-family-some;
+    padding-bottom: 2rem;
+    justify-content: center;
+    display: flex;
+  }
+  h3 {
+    font-size: $font-size-element;
+  }
+}
+
+.form {
+  h2 {
+    color: $color-primary;
+    font-size: $font-size-normal-title;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
+  &__description {
+    display: flex;
+    justify-content: center;
+  }
+}
+.contactUsContent__forminput {
+  &--first {
+    @include respond(normal) {
+      margin-bottom: 2rem;
+    }
+    @include respond(tab-land) {
+      margin-bottom: 1.5rem;
+    }
+  }
+  &--email {
+    @include respond(normal) {
+      margin-bottom: 2rem;
+    }
+    @include respond(tab-land) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.h4class {
+  h4 {
+    font-size: $font-size-element;
+    color: rgb(82, 80, 80);
+  }
+  &__content {
+    label {
+      font-size: 1.7rem;
+      cursor: pointer;
+    } 
+  }
+}
+.unstyled {
+  list-style: none;
+  display: flex;
+  li {
+    padding: 0 0.5rem;
+  }
+}
+
+.styled-checkbox {
+  position: absolute; // take it out of document flow
+  opacity: 0; // hide it
+  & + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1.7rem;
+  }
+
+  // Box.
+  & + label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    border: 0.3rem ridge $color-secondary;
+    font-size: 1.7rem;
+  }
+
+  // Box hover
+  &:hover + label:before {
+    border: 0.3rem ridge $color-like-nav;
+  }
+
+  // Box focus
+  &:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+
+  // Box checked
+  &:checked + label:before {
+    background-color: $color-like-nav;
+  }
+
+  // Checkmark. Could be replaced with an image
+  &:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white,
+      4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+  }
+}
+
+.submitBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

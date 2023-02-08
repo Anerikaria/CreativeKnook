@@ -1,0 +1,75 @@
+.faqs {
+  &-heading {
+    color: $color-primary;
+    display: flex;
+    justify-content: center;
+    font-size: $font-size-big-title;
+    @include respond(tab-land) {
+      font-size: $font-size-element;
+    }
+  }
+}
+// .faqscontainer {
+//   margin: $default-margin-to-all;
+//   display: flex;
+//   &__items {
+//     width: 165rem;
+//     padding: 2rem 4rem;
+//     border: 0.1rem solid $color-like-nav;
+//     position: absolute;
+//     transform: translate(-50% -50%);
+
+//     &-wrapper {
+//       background-color: $color-forth;
+//       margin-bottom: 1.2rem;
+//       padding: 1rem 2rem;
+//       border-radius: 1rem;
+//       box-shadow: $box-shadow-light;
+//     }
+
+//     &-que,
+//     &-answer {
+//       font-family: $font-family-some;
+//     }
+
+//     &-que {
+//       font-size: $font-size-element;
+//       width: 100%;
+//       background-color: transparent;
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//       color: $color-primary-header-darker;
+//       border: none;
+//       outline: none;
+//       cursor: pointer;
+//       padding: 1rem 0;
+//     }
+//     &-answer {
+//       position: relative;
+//       font-size: $font-family-some;
+//       text-align: justify;
+//       line-height: 2rem;
+//       height: 0;
+//       overflow: hidden;
+//       transition: all 1s ease-in-out;
+//     }
+//   }
+// }
+
+.accordion {
+  &__1,
+  &__3 {
+    @include background-color($color-white);
+  }
+  &__2,
+  &__4 {
+    @include background-color($color-white);
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 0.4rem;
+  }
+}

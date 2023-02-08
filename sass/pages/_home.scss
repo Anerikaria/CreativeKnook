@@ -1,0 +1,110 @@
+@import '../components/directorIntro';
+
+@mixin section-intro {
+  .section__directorintro {
+    @include intro();
+  }
+}
+.section-stories {
+  background-color: $color-in-grey;
+}
+
+@mixin section-whyus {
+  .section__whyus {
+    background-color: $color-forth;
+    @include us();
+    @include respond(tab-land) {
+      width: 100%;
+    }
+    @include respond(tab-port) {
+      width: 100%;
+    }
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+}
+
+@mixin section-philosophy {
+  .section__philosophycover {
+    background-image: $gradient-tertiary, url('/images/show-img--6.jpeg');
+    background-size: cover;
+    @include philosophy-home();
+    @include respond(tab-land) {
+      background-size: cover;
+    }
+  }
+}
+
+@mixin section-testimonial {
+  .section__testimonial {
+    background-color: $color-white;
+    &__title--testimonials {
+      margin-bottom: 4rem;
+    }
+  }
+  @include testimonial;
+}
+@mixin section-curriculum {
+  .section__Curriculum {
+    background-color: $color-forth;
+    @include curriculum();
+  }
+}
+
+.section__contactUS,
+.meetOurTeam {
+  h2 {
+    margin: $default-margin-to-all;
+    color: $color-primary;
+    font-size: $font-size-big-title;
+    display: flex;
+    justify-content: center;
+    @include respond(tab-land) {
+      padding: 0 2rem;
+    }
+  }
+  h3 {
+    margin-bottom: 2rem;
+    font-size: $font-size-normal-title;
+    display: flex;
+    justify-content: center;
+    color: $nav-color-font;
+    @include respond(tab-land) {
+      padding: 0 2rem;
+    }
+  }
+  // h1 {
+  //   margin-bottom: 2rem;
+  //   font-size: $font-size-normal-title;
+  //   display: flex;
+  //   justify-content: center;
+  //   color: $color-primary;
+  // }
+}
+
+.desc3 {
+  margin-bottom: 2rem;
+  font-size: $font-size-big-title;
+  display: flex;
+  justify-content: center;
+  color: $color-primary;
+}
+
+.section__meetTeam {
+  background-color: $color-forth;
+}
+
+.section__covid19 {
+  p {
+    padding-top: 2rem;
+    font-size: $font-size-element;
+  }
+}
+
+.section__otherlinks {
+  padding: 7rem 20rem;
+  @include respond(tab-land) {
+    padding: 8rem 1rem;
+  }
+}

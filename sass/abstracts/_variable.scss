@@ -1,0 +1,223 @@
+//color variables
+
+$color-white: #fff;
+$nav-color-font: #444;
+$general-color: #faf9f9;
+$color-in-grey: #eaece9;
+$color-like-nav: #ef5552;
+$color-forth: #eac4d438;
+$color-primary-header-darker: #c14d4b;
+$color-header-footer: #d980ad94;
+$color-secondary-opacity: #bbda9695;
+
+//-------------------------------------------------------------
+$color-primary: #eb1464;
+$color-secondary: #94da3f;
+$color-tertiary: #d7eff3;
+
+//------------------------------------------------------------
+$color-primary-header: #cf4c4a;
+$color-primary-light: #f15b9271;
+$color-primary-darker: #ac0844;
+$color-secondary-darker: #1e2b0f52;
+$color-tertiary-darker: #088294;
+$color-tertiary-light: #62cadc;
+
+//----------------------------------------------------------------
+$gradient-primary: linear-gradient(to top left, #d980adaf, #81d480b0);
+$gradient-secondary: linear-gradient(to right bottom, #81d480b0, #cd882eb7);
+$gradient-tertiary: linear-gradient(to top right, #f3acd14f, #3a717aa9);
+$gradient-tertiary-darker: linear-gradient(to top right, #23020e98, #022125c4);
+$gradient-header: linear-gradient(to right bottom, #81d480b0, #f99896e4);
+$gradient-tertiary-light: linear-gradient(to top right, #f3d5e49f);
+$gradient-secondary-light: linear-gradient(
+  to right bottom,
+  #d980adec,
+  #56cadff5
+);
+
+//---------------------------
+$gradient-tertiary-light: linear-gradient(
+  to right bottom,
+  #8bd0dcd2,
+  #faa9a89c
+);
+
+// $gradient-tertiary-darker: linear-gradient(
+//   to right bottom,
+//   #6f979faa,
+//   #e0bd90d3
+// );
+
+//default height for animation
+$height: 100%;
+//For  fonts
+// $default-frontSize: 62.5%;
+$font-family: 'Josefin Sans', serif;
+$font-size-big-title-normal : 2.2rem;
+$font-size-normal-elememt-normal: 2.2rem;
+$font-size-small-normal: 1.5rem;
+$font-size-big-title: 3.5rem;
+$font-size-normal-title: 3rem; //used in director title
+$font-size-element: 2.5rem;
+$font-size-small: 1.7rem;
+$font-size-normal-elememt: 2rem;
+$font-family-some: 'Josefin Sans', sans-serif;
+
+//padding between layouts for all
+$default-padddeing-to-all: 8rem;
+$default-margin-to-all: 5rem 0;
+
+//border-radius
+$border-radius-header: 0 0 0 85% / 20rem;
+$border-radius-header-small: 0 0 0 85% / 10rem;
+$border-radius-headerReverse: 0 0 85% 0 /20rem;
+$border-radius-footer: 0 85% 0 0 / 20rem;
+
+//box-shadow
+$box-shadow: 0 0 6rem
+  rgb(
+    $color: #000,
+    $alpha: 0.5,
+  );
+
+$box-shadow-big: 0 2rem 9rem
+  rgb(
+    $color: #000,
+    $alpha: 0.8,
+  );
+$box-shadow-light: 0 0 4rem
+  rgb(
+    $color: #000,
+    $alpha: 0.3,
+  );
+
+//rems
+
+$borderradiusthreerem: 3rem;
+$borderradiusfourrem: 4rem;
+
+@include respond(phone) {
+  $font-family: 'Josefin Sans', serif;
+
+  //for fonts
+  // $font-size-big-title: 1.3rem;
+  // $font-size-normal-title: 1rem; //used in director title
+  // $font-size-element: 0.8rem;
+  // $font-size-small: 0.5rem;
+  // $font-family-some: 'Josefin Sans', sans-serif;
+
+  //for padding and margin
+  $default-padddeing-to-all: 2rem;
+  $default-margin-to-all: 1rem 0;
+
+  $padding-little-big: 30rem;
+
+  //COLUMN GAPS
+  $col-gap-normal: 7rem;
+
+  //box-shadow
+  //box-shadow
+  $box-shadow: 0 0 2rem
+    rgb(
+      $color: #000,
+      $alpha: 0.1,
+    );
+
+  $box-shadow-big: 0 1rem 3.5rem
+    rgb(
+      $color: #000,
+      $alpha: 0.4,
+    );
+  $box-shadow-light: 0 0 2rem
+    rgb(
+      $color: #000,
+      $alpha: 0.2,
+    );
+}
+
+@include respond(tab-port) {
+  //for fonts
+  $font-size-big-title: 2rem;
+  $font-size-normal-title: 1.3rem; //used in director title
+  $font-size-element: 1rem;
+  $font-size-small: 0.8rem;
+  $font-family: 'Josefin Sans', serif;
+
+  //for padding and margin
+  $default-padddeing-to-all: 3.5rem;
+  $default-margin-to-all: 2.2rem 0;
+
+  //box-shadow
+  //box-shadow
+  $box-shadow: 0 0 3rem
+    rgb(
+      $color: #000,
+      $alpha: 0.3,
+    );
+
+  $box-shadow-big: 0 1rem 4.5rem
+    rgb(
+      $color: #000,
+      $alpha: 0.5,
+    );
+  $box-shadow-light: 0 0 3rem
+    rgb(
+      $color: #000,
+      $alpha: 0.4,
+    );
+}
+
+@include respond(tab-land) {
+  //for padding and margin
+  $default-padddeing-to-all: 5rem;
+  $default-margin-to-all: 3rem 0;
+
+  //box-shadow
+  //box-shadow
+  $box-shadow: 0 0 3rem
+    rgb(
+      $color: #000,
+      $alpha: 0.4,
+    );
+
+  $box-shadow-big: 0 1rem 4.5rem
+    rgb(
+      $color: #000,
+      $alpha: 0.6,
+    );
+  $box-shadow-light: 0 0 3rem
+    rgb(
+      $color: #000,
+      $alpha: 0.2,
+    );
+}
+
+@include respond(normal) {
+  //padding between layouts for all
+  $default-padddeing-to-all: 6.5rem;
+  $default-margin-to-all: 3.7rem 0;
+
+  //border-radius
+  $border-radius-header: 0 0 0 85% / 20rem;
+  $border-radius-headerReverse: 0 0 85% 0 /20rem;
+  $border-radius-footer: 0 85% 0 0 / 20rem;
+
+  //box-shadow
+  $box-shadow: 0 0 6rem
+    rgb(
+      $color: #000,
+      $alpha: 0.5,
+    );
+
+  $box-shadow-big: 0 2rem 9rem
+    rgb(
+      $color: #000,
+      $alpha: 0.8,
+    );
+  $box-shadow-light: 0 0 4rem
+    rgb(
+      $color: #000,
+      $alpha: 0.3,
+    );
+}

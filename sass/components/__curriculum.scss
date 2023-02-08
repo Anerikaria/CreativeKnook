@@ -1,0 +1,144 @@
+@mixin curriculum {
+  .curriculum {
+    &__one {
+      @include card-curriculum();
+    }
+    &__two {
+      @include card-curriculum();
+    }
+    &__three {
+      @include card-curriculum();
+    }
+    &__title {
+      span {
+        display: flex;
+        justify-content: center;
+        font-size: $font-size-normal-title;
+      }
+      p {
+        font-size: $font-size-normal-elememt;
+        padding: 0 1rem;
+        justify-content: center;
+        @include respond(normal) {
+          overflow: hidden;
+        }
+        @include respond(tab-land) {
+          overflow: hidden;
+        }
+        @include respond(tab-port) {
+          overflow: hidden;
+        }
+        @include respond(phone) {
+          overflow: hidden;
+        }
+      }
+      a {
+        // padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        font-size: $font-size-element;
+        color: $color-primary;
+        font-weight: bold;
+      }
+    }
+    // &__image-one {
+    //   img {
+    //     // border-radius: 20rem;
+    //   }
+    // }
+    &__title--one {
+      span {
+        color: $color-like-nav;
+      }
+    }
+    &__title--two {
+      span {
+        color: $color-tertiary-darker;
+      }
+    }
+    &__title--three {
+      span {
+        color: #f58c03f2;
+      }
+    }
+
+    &__main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 20rem;
+
+      @include respond(normal) {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 14rem;
+        
+      }
+      @include respond(tab-land) {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(37em, 1fr));
+        grid-column-gap: 12rem;
+        row-gap: 2rem;
+      }
+
+      @include respond(tab-port) {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-column-gap: 8rem;
+      }
+      @include respond(phone) {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-column-gap: 4rem;
+      }
+    }
+    &__image-one {
+      position: relative;
+
+      //&::before {
+      // @include img-for-hoverready;
+      //}
+      // &:hover::before {
+      //   height: $height;
+      //   cursor: pointer;
+      // }
+      &--img {
+        @include img-curriculum;
+      }
+    }
+    &__image-two {
+      // position: relative;
+      // &::before {
+      //   @include img-for-hoverready;
+      // }
+      // &:hover::before {
+      //   height: $height;
+      //   cursor: pointer;
+      // }
+      &--img {
+        @include img-curriculum;
+      }
+    }
+    &__image-three {
+      // position: relative;
+      // &::before {
+      //   @include img-for-hoverready;
+      // }
+      // &:hover::before {
+      //   height: $height;
+      //   cursor: pointer;
+      // }
+      &--img {
+        @include img-curriculum;
+      }
+    }
+  }
+
+  //   &__image-three {
+  //     @include img-curriculum;
+  //   }
+}

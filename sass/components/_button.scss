@@ -1,0 +1,282 @@
+.linkout{
+  list-style: none;
+  text-decoration: none;
+  color: $color-primary-header-darker;
+  border-bottom: 1px solid $color-secondary;
+
+}
+.btn-primary{
+  color: $color-primary;
+}
+.btn__learnmore {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  a{
+    text-decoration: none;
+  }
+}
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  font-family: $font-family;
+  font-weight: 600;
+  padding: 1.5rem 2.5rem;
+  margin-top: 4rem;
+  display: flex;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+  font-size: $font-size-normal-elememt;
+  border: 2.5px solid $color-secondary;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+
+  span {
+    z-index: 20;
+  }
+
+  @include respond(normal){
+    font-size: $font-size-small;
+  }
+}
+
+.btn:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  background-color: $color-primary-header-darker;
+  border: none;
+  color: white;
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(2);
+  box-shadow: $box-shadow-big;
+  opacity: 0;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: $box-shadow;
+}
+
+.btn--learnMore {
+  justify-content: center;
+  background-color: $color-white;
+  color: $color-primary;
+  a{
+    text-decoration: none;
+    color: $color-primary;
+    &:hover, &:focus{
+      color: $color-white;
+    }
+  }
+  &:hover, &:focus{
+    color: $color-white;
+  }
+}
+.btn--learnMore::after {
+  background-color: $color-primary-header-darker;
+}
+
+.btn--animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+.btn__waitlist {
+  margin-bottom: 5rem;
+  color: $color-primary;
+}
+
+
+.butn {
+  border: none;
+  border-radius: 2.5rem;
+  padding: 0.5rem;
+  animation: all 0.3s ease-in-out;
+  background-color: #f5130f43;
+
+  &:hover {
+    transform: scale(90%);
+  }
+}
+
+
+/* MODAL WINDOW */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 130rem;
+  background-color: #ece6e6;
+  padding: 5rem 6rem;
+  box-shadow: $box-shadow-big;
+  z-index: 1000;
+  transition: all 0.5s;
+  max-height: 85vh;
+  overflow-y: auto;
+  border-radius: 2rem;
+  h1 {
+    span {
+      color: $color-like-nav;
+    }
+  }
+  @include respond(normal){
+    width: 100rem;
+    padding: 0rem 3rem;
+    margin: 0rem 1rem;
+    max-height: 85vh;
+  }
+  @include respond(tab-land){
+    width: 80rem;
+    padding: 0rem 2rem;
+    margin: 0rem .5rem;
+
+  }
+  @include respond(tab-port){
+    margin: 0rem 0.7rem;
+  }
+  @include respond(phone){
+    width: 45rem;
+    padding: 0rem 1rem;
+    margin:  3rem 0.5rem;
+  }
+
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0.2rem);
+  z-index: 100;
+  transition: all 0.2s;
+
+}
+
+.modal__header {
+  font-size: $font-size-big-title;
+  margin-bottom: 4.5rem;
+  line-height: 1.5;
+  color: $color-primary;
+  font-weight: bold;
+  @include respond(normal){
+    font-size: $font-size-normal-title;
+  }
+}
+
+.modal__form {
+  margin: 0 2rem;
+  display: grid;
+  padding: 0 3rem;
+  // grid-template-columns: repeat(4, 1fr);
+   grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 3rem;
+  @include respond(tab-port){
+    display: grid;
+    grid-template-columns:35%;
+    padding: 0 1rem;
+    margin: 0rem 1rem;
+    gap: 1.8rem;
+  }
+}
+
+.modal__form label {
+  font-size: 1.7rem;
+  font-weight: 500;
+  span {
+    color: $color-like-nav;
+  }
+}
+
+.modal__form input,
+select,
+textarea {
+  font-size: 1.7rem;
+  padding: 1.5rem 1rem;
+  border: 1px solid $color-secondary;
+  border-radius: 0.5rem;
+  @include respond(tab-port){
+    padding: 1rem 0.2rem;
+    margin-right: 0rem .5rem;
+  }
+
+}
+
+.modal__form input:focus,
+select:focus,
+textarea:focus {
+  border: none;
+  outline: none;
+  border-bottom: 0.2rem solid $color-like-nav;
+  box-shadow: $box-shadow;
+}
+
+.modal__form button {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  margin-top: 1rem;
+  color: $color-primary;
+}
+
+.btn--close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.top {
+  opacity: 0;
+  // --offset: 2rem;
+  position: fixed;
+  bottom: 3.5rem;
+  right: 4rem;
+  place-self: end;
+  // margin-top: calc(100vh + var(--offset));
+  cursor: pointer;
+  /* visual styling */
+  width: 5.8rem;
+  box-shadow: $box-shadow-big;
+  aspect-ratio: 1;
+  background: $color-like-nav;
+  border-radius: 10px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    inset: 30%;
+    transform: translateY(20%) rotate(-45deg);
+    border-top: 0.5rem ridge rgb(102, 98, 98);
+    border-right: 0.5rem ridge rgb(74, 62, 62);
+  }
+}
+
+.linkcolor{
+  text-decoration: none;
+  color: $color-tertiary-darker;
+}
+// .paddingformodal {
+//   @include respond(tab-port) {
+//     margin-left: 3rem;
+//   }
+// }
+

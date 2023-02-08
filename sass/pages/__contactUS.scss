@@ -1,0 +1,227 @@
+.contactus__fromgroup {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 6rem;
+  @include respond(tab-land) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.contactUsContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2fr;
+  padding: 0 25rem;
+  @include respond(normal) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @include respond(tab-land) {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+    padding: 0;
+  }
+
+  &__form {
+    background-color: $color-forth;
+    border-radius: 2rem;
+    padding: 12rem 15rem;
+    justify-self: start;
+    display: grid;
+    @include respond(normal) {
+      padding: 12rem 16rem;
+      margin: auto;
+      justify-self: center;
+    }
+    @include respond(tab-land) {
+      padding: 12rem 15rem;
+      margin: 6rem;
+    }
+    @include respond(tab-port) {
+      padding: 12rem 15rem;
+      margin: auto;
+    }
+    @include respond(phone) {
+      padding: 12rem 10rem;
+    }
+    h3 {
+      justify-self: center;
+      color: #cd872e;
+      font-size: $font-size-element;
+      font-family: $font-family-some;
+    }
+  }
+  //   &__formdetails{
+
+  //   }
+  &__formdetails:not(:last-child) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include respond(normal) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__formgroup:not(:last-child) {
+    margin-bottom: 5rem;
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+  }
+  &__forminput,
+  &__formtextarea {
+    width: 100%;
+    outline: $color-secondary;
+    font-size: $font-size-small;
+    font-family: $font-family-some;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: $color-white;
+    border: 1px solid $color-secondary;
+    border-bottom: 0.2rem solid $color-secondary;
+  }
+  &__forminput::-webkit-input-placeholder {
+    color: $nav-color-font;
+  }
+  &__formtextarea {
+    width: 100%;
+    @include respond(tab-land) {
+      margin-top: 5rem;
+    }
+  }
+
+  &__forminput:focus,
+  &__formtextarea:focus {
+    border: none;
+    outline: none;
+    box-shadow: $box-shadow-light;
+    border-bottom: 0.2rem solid $color-like-nav;
+  }
+
+  &__formlabel {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+  }
+  &__otherdetails {
+    justify-self: end;
+    @include respond(normal) {
+      margin-top: 5rem;
+      justify-self: center;
+    }
+  }
+  &__center {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    border: 0.1rem solid $color-secondary;
+    padding: 4rem 0;
+    border-radius: 2rem;
+    h3 {
+      color: $color-primary;
+    }
+    p:not(:last-child) {
+      color: #cd872e;
+      font-family: $font-family-some;
+      font-size: $font-size-element;
+    }
+    p {
+      padding: 0 4rem;
+      color: $color-tertiary-darker;
+      font-family: $font-family-some;
+      font-size: $font-size-element;
+    }
+  }
+  &__hours {
+    justify-self: center;
+  }
+  &__contactNumber {
+    justify-self: center;
+  }
+  &__email {
+    justify-self: center;
+  }
+}
+
+// .btn__submit {
+//   display: grid;
+//   justify-self: center;
+// }
+
+.map {
+  margin: $default-margin-to-all;
+  padding: 0;
+
+  &__google {
+    width: 100%;
+    background-color: $color-forth;
+    height: 70rem;
+  }
+}
+
+.careerlink {
+  margin-bottom: 4rem;
+  padding: 0 10rem;
+  &__jointheteam {
+    &-details {
+      h2 {
+        font-size: $font-size-big-title;
+        display: flex;
+        justify-content: center;
+        color: $color-primary;
+        font-family: $font-family;
+      }
+      p {
+        padding-top: 5rem;
+        font-size: 2.2rem;
+        font-family: $font-family;
+      }
+    }
+  }
+}
+
+.applyNow {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  font-size: $font-size-normal-title;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: $font-size-element;
+  color: $color-primary;
+  position: relative;
+  animation: 0.5s;
+  &::after {
+    content: '>>';
+    position: absolute;
+    opacity: 0;
+    right: -1rem;
+    transition: 0.5s;
+  }
+  &:hover {
+    padding-right: 5rem;
+    padding-left: 1rem;
+  }
+
+  &:hover::after {
+    opacity: 1;
+    right: 5rem;
+  }
+}
+
+.child-section {
+  padding-top: 2rem;
+}
+
+.contactFAQs {
+  text-decoration: none;
+  color: $color-like-nav;
+  border-bottom: 1px ridge $color-like-nav;
+}
+
+//for email result
+.results {
+  color: $color-like-nav;
+  font-size: $font-size-normal-title;
+}

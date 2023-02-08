@@ -1,0 +1,71 @@
+@mixin us {
+  .why__us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    backface-visibility: hidden;
+    @include respond(tab-land) {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(40em, 1fr));
+    }
+
+    &-title {
+      align-self: center;
+      p {
+        font-size: $font-size-element;
+        font-family: $font-family-some;
+        @include respond(normal) {
+          line-height: 3.5rem;
+          font-size: $font-size-normal-elememt;
+
+        }
+        @include respond(tab-land) {
+          line-height: 4rem;
+          overflow: hidden;
+        }
+        @include respond(tab-port) {
+          line-height: 2.5rem;
+          overflow: hidden;
+        }
+        @include respond(phone) {
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+  // .why__us-img {
+  //   transform: scale(1);
+  // }
+
+  .why-us--img {
+    width: 100%;
+    border-radius: 5rem;
+    box-shadow: $box-shadow;
+    object-fit: cover;
+    object-position: 50% 50%;
+    @include respond(normal) {
+      border-radius: 4rem;
+    }
+    @include respond(tab-land) {
+      border-radius: 3rem;
+    }
+    @include respond(tab-port) {
+      border-radius: 2rem;
+    }
+    @include respond(phone) {
+      border-radius: 1rem;
+    }
+  }
+  .butn {
+    background-color: inherit;
+    &--whyus {
+      text-decoration: none;
+      border: none;
+      color: $color-primary;
+      font-family: $font-family;
+      font-weight: bold;
+      font-size: $font-size-element;
+      
+    }
+  }
+}

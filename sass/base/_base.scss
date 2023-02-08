@@ -1,0 +1,88 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  //This defines what 1rem is
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-family !important;
+  font-weight: 500;
+  color: $nav-color-font;
+  line-height: 1.7;
+  background-color: $color-white;
+  box-sizing: border-box;
+}
+.section {
+  padding: 15rem 13rem;
+  @include respond(normal) {
+    padding: 12rem 11rem;
+  }
+  @include respond(tab-land) {
+    padding: 9rem 7rem;
+  }
+  @include respond(tab-port) {
+    padding: 6rem 5rem;
+  }
+  @include respond(phone) {
+    padding: 3rem;
+  }
+}
+
+.section__description {
+  margin-bottom: 2rem;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(6rem);
+  @include respond(normal) {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  @include respond(tab-land) {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+  @include respond(tab-port) {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  @include respond(phone) {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+}
+
+.list-font{
+  font-size: $font-size-element;
+}
+
+.aligncenter{
+  display: flex;
+  justify-content: center;
+align-items: center;
+}
+
+.headings-title-forall{
+  color: $color-primary;
+  font-size: 2.8rem;
+  
+}
+
+.forsomepara{
+  font-size: $font-size-element;
+  @include respond(normal){
+    font-size: $font-size-normal-elememt;
+  }
+}
+
+.forsometitle{
+  color: $color-primary;
+  font-size: $font-size-element;
+}

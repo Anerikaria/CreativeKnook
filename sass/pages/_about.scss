@@ -1,0 +1,99 @@
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  
+  @include respond(tab-land) {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
+.aboutitle {
+  h2 {
+    color: $color-primary;
+    font-size: $font-size-big-title;
+  }
+  .list-item {
+    font-size: $font-size-element;
+    list-style: none;
+    @include respond(normal){
+      font-size: $font-size-normal-elememt;
+    }
+    
+  }
+  .list-item::before {
+    content: '';
+    display: inline-block;
+    height: 1.7rem;
+    width: 1.7rem;
+    margin-right: 0.5rem;
+    background-image: url(/images/chevron-thin-right.svg);
+    background-size: cover;
+
+    //Newer browsers - masks
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+      background-color: $color-like-nav;
+      -webkit-mask-image: url(/images/chevron-thin-right.svg);
+      -webkit-mask-size: cover;
+      mask-image: url(/images/chevron-thin-right.svg);
+      mask-size: cover;
+      background-image: none;
+    }
+  }
+}
+
+.col {
+  border-bottom: 0.1rem ridge $color-like-nav;
+  padding: 10rem 3rem;
+  margin: 10rem 12rem;
+  @include respond(tab-port) {
+    padding: 3rem 4rem;
+    margin: 4rem 4rem;
+  }
+  &__schlrediness {
+    display: flex;
+    justify-content: center;
+    color: $color-primary;
+    font-size: $font-size-big-title;
+  }
+  &__info {
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+  }
+}
+
+.about__contact {
+  div {
+    h2 {
+      color: $color-primary;
+      font-size: $font-size-big-title;
+      @include respond(normal){
+        font-size: $font-size-element;
+      }
+    }
+    p {
+      font-size: $font-size-element;
+      @include respond(normal){
+        font-size: $font-size-normal-elememt;
+      }
+    }
+  }
+  &-sub2 {
+    font-size: $font-size-element;
+    color: $color-tertiary-darker;
+  }
+}
+
+.provide {
+  div {
+    h3 {
+      color: $color-tertiary-darker;
+      font-size: $font-size-element;
+    }
+  }
+}
+
+// .provide__detail1,
+// .provide__detail2 {
+//   border-right: 0.3rem ridge $color-like-nav;
+// }

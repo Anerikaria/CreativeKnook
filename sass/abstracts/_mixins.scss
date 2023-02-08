@@ -1,0 +1,295 @@
+//for Navigation
+
+@mixin basic-design {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+@mixin margin-padding($margin) {
+  margin: {
+    left: $margin;
+  }
+}
+
+@mixin navigation-style {
+  @include basic-design();
+  justify-content: space-between;
+  height: 9rem;
+  width: 100%;
+  padding: 0 6rem;
+  z-index: 100;
+}
+
+//animaton for header
+@mixin animation-style($nameOfAnimation) {
+  animation: $nameOfAnimation 3s ease-out;
+  backface-visibility: hidden;
+}
+
+// 1.for section philosophy in Home-Page
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 7rem;
+  row-gap: 7rem;
+  place-self: center stretch;
+  justify-items: center;
+  @include respond(normal) {
+    column-gap: 5rem;
+  }
+  @include respond(tab-land) {
+    display: grid;
+    grid-template-columns: 100%;
+    // column-gap: 3rem;
+    // grid-template-columns: repeat(auto-fit, minmax(3em, 1fr));
+  }
+}
+
+@mixin philosophy-to-all {
+  background-color: #fbf9f97f;
+  padding: 3rem;
+  border-radius: $borderradiusthreerem;
+  box-shadow: 0.1rem 0.1rem $color-tertiary-darker;
+  align-self: center;
+  @include respond(tab-land) {
+    padding: 3rem;
+  }
+}
+
+@mixin img-curriculum {
+  cursor: pointer;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: $borderradiusfourrem;
+  border-top-right-radius: $borderradiusfourrem;
+  @include respond(normal) {
+    height: 32rem;
+    object-fit: cover;
+    border-top-left-radius: $borderradiusfourrem;
+    border-top-right-radius: $borderradiusfourrem;
+  }
+  @include respond(tab-land) {
+    border-bottom-left-radius: $borderradiusthreerem;
+    border-bottom-right-radius: $borderradiusthreerem;
+  }
+}
+
+@mixin card-curriculum {
+  width: 100%;
+  height: 62rem;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+  margin-top: 2rem;
+  background-color: $color-white;
+  box-shadow: 0.1rem 3rem 4rem rgb($color: #000, $alpha: 0.5);
+  border-radius: $borderradiusfourrem;
+  @include respond(normal){
+    height: 59rem;
+  }
+
+  // @include respond(phone) {
+  //   width: 100%;
+  //   height: 60rem;
+  //   background-color: $color-white;
+  //   box-shadow: 0.1rem $borderradiusthreerem $borderradiusfourrem rgb($color: #000, $alpha: 0.5);
+  //   border-radius: 1rem;
+  // }
+}
+
+@mixin img-for-hoverready {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  top: 0;
+  transition: all 0.5s ease-out;
+  background: $gradient-tertiary-light;
+}
+
+@mixin animation-style($nameOfAnimation, $time) {
+  animation: $nameOfAnimation $time ease-out;
+  backface-visibility: hidden;
+}
+
+@mixin header-all($backgroundImg, $height) {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
+  background-image: $backgroundImg;
+  background-size: cover;
+  background-position: top;
+  color: $general-color;
+  border-radius: $border-radius-header;
+  @include respond(tab-land) {
+    height: 100%;
+    object-fit: cover;
+    border-radius: $border-radius-header-small;
+  }
+}
+
+@mixin background-color($backgroundColor) {
+  .accordion {
+    margin-top: 5rem;
+    max-width: 100%;
+    border-radius: 1.3rem;
+    background-color: $backgroundColor;
+    padding: 4rem 3rem;
+    @include respond(tab-port){
+      padding: 2rem 1rem;
+    }
+    
+    h2 {
+      font-size: $font-size-normal-title;
+      color: $color-primary;
+      font-weight: 900;
+    }
+    // margin: 2rem auto;
+    &-item {
+      background-color: $color-forth;
+      margin: 3rem 0;
+      border-radius: 2rem;
+      box-shadow: $box-shadow-light;
+      &-header {
+        padding: 2.2rem 2.5rem 2.2rem 1rem;
+        color: $color-tertiary-darker;
+        min-height: 3.5rem;
+        line-height: 2.5rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        font-family: $font-family-some;
+        font-size: 2.3rem;
+        @include respond(normal){
+          font-size: 2rem;
+          line-height: 2.2rem ;
+        }
+      }
+      &-header::after {
+        content: '\002B';
+        font-size: 4rem;
+        color: $color-primary;
+        border-radius: 50%;
+        font-weight: bold;
+        position: absolute;
+        right: 2rem;
+        transition: transform 0.3s ease-in-out;
+      }
+      &-header.active::after {
+        transform: rotate(-227deg);
+        font-size: 3rem;
+        color: $color-like-nav;
+        font-weight: bold;
+        position: absolute;
+        right: 2rem;
+      }
+      // &-header.active + &-body {
+      //   max-height: 200px;
+      // }
+
+      &-body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        // background-image: linear-gradient(to right, $color-like-nav, transparent)
+        //   1;
+        &-content {
+          font-size: $font-size-element;
+          padding: 3rem;
+          line-height: 4rem;
+          border-top: 0.2rem solid $color-like-nav;
+          @include respond(normal){
+            line-height: 3rem;
+            font-size: $font-size-normal-elememt;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin heading-text($positon) {
+  display: flex;
+  justify-content: $positon;
+  font-size: $font-size-big-title;
+  color: $color-primary;
+  @include respond(tab-land) {
+    font-size: $font-size-normal-title;
+  }
+}
+
+@mixin footer-links {
+  width: 100%;
+  list-style: none;
+  display: grid;
+  grid-auto-flow: row;
+  // grid-template-rows: repeat(2, 200px);
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0.2rem;
+  align-items: center;
+  @include respond(normal){
+    column-gap: 1rem;
+  }
+  @include respond(tab-land) {
+    width: 100%;
+    font-size: $font-size-normal-elememt;
+    justify-self: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+//Media query Manager
+/*
+0 - 600px :  phone,
+600px - 900 : tablet portrait,
+900 -1200px : tablet landscape
+[1200 - 1800] is normal,
+1800 + : Big Desktop// which I am currently using
+*/
+
+// @mixin respond-phone {
+//   @media (max-width: 600px) {
+//     @content  ;
+//   }
+// }
+
+//1em = 16px
+//breakpoint argument choices
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == normal {
+    @media (max-width: 112.5em) {
+      
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      
+      @content;
+    }
+    //1200px
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      
+      @content;
+    }
+    //900px
+  }
+
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      
+      @content;
+    }
+    //600px
+  }
+}

@@ -1,0 +1,162 @@
+@mixin footer-style {
+  .footer {
+    height: 60vh;
+  
+    @include respond(normal) {
+      height: 100%;
+      padding-bottom: 10px;
+    }
+    
+    // @include respond(phone) {
+    //   height: 19vh;
+    // }
+    // @include respond(tab-port) {
+    //   height: 30vh;
+    // }
+    // @include respond(tab-land) {
+    //   height: 39vh;
+    // }
+    // @include respond(normal) {
+    //   height: 49vh;
+    // }
+
+    background-color: $color-header-footer;
+    background-size: cover;
+    background-position: bottom;
+    border-radius: $border-radius-footer;
+
+    &__items {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      column-gap: 3rem;
+      @include respond(normal){
+        column-gap: 1.5rem;
+        grid-template-columns: 25% 75%;
+ 
+      }
+      @include respond(tab-land) {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 0;
+        margin: 0;
+      }
+    }
+    &__btn {
+      width: 60%;
+      margin-left: 7rem;
+      align-items: center;
+      @include respond(tab-land) {
+        align-items: center;
+        width: 100%;
+        padding: 5rem;
+        margin: 0;
+      }
+    }
+
+    &__item {
+      @include respond(tab-land) {
+        padding: 0;
+        margin: 0;
+      }
+      h1 {
+        color: $color-primary;
+        font-family: $font-family;
+        font-size: $font-size-element;
+        letter-spacing: 0.2rem;
+        @include respond(normal){
+          font-size: $font-size-normal-elememt;
+        }
+      }
+
+      &-sub {
+        // padding-top: 1rem;
+        justify-self: center;
+        justify-content: center;
+        font-family: $font-family-some;
+        font-size: $font-size-normal-elememt;
+        color: $color-tertiary-darker;
+         
+        @include respond(normal){
+          font-size: $font-size-small;
+        }
+        a{
+          text-decoration: none;
+          color: $color-tertiary-darker;
+          &:focus, &:hover{
+            color: $color-tertiary-darker;
+          }
+        }
+
+        h2 {
+          color: $color-primary;
+          font-size: $font-size-element;
+        }
+        ul {
+          @include footer-links;
+          @include respond(phone) {
+            @include footer-links;
+          }
+          @include respond(tab-port) {
+            @include footer-links;
+          }
+          @include respond(tab-land) {
+            @include footer-links;
+          }
+          @include respond(normal) {
+            @include footer-links;
+          }
+          li{
+            a{
+              text-decoration: none;
+              list-style: none;
+              color: $color-tertiary-darker;
+            }
+          }
+        }
+      }
+    }
+    &__copyright {
+      border-top: 0.2rem dotted $color-primary;
+      font-size: $font-size-small;
+    }
+  }
+  // .social {
+  //   color: $color-primary;
+  //   font-size: $font-size-element;
+  // }
+   .socialmedia {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+   font-size: $font-size-element;
+   @include respond(normal){
+    width: 70%;
+   }
+   @include respond(tab-port){
+    padding-bottom: 5rem;
+    width: 80%;
+   }
+  }
+
+  .footer__itemO {
+    @include respond(tab-land) {
+      padding-top: 5rem;
+    }
+  }
+  .footer-div1 {
+    @include respond(tab-land) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .footer-div2{
+    padding-top: 13rem;
+    column-gap: 5rem;
+    @include respond(normal){
+      padding-top: 0;
+    }
+    @include respond(tab-land){
+      margin: 0 5rem;
+    }
+  }
+}

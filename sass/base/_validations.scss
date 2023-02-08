@@ -1,0 +1,26 @@
+// input:invalid{
+//     border: none;
+//     border-bottom: 2px solid $color-like-nav;
+// }
+
+// input:valid{
+//     border: 2px solid $color-secondary;
+// }
+
+.invalid-feedback,
+.empty-feedback {
+  display: none;
+}
+
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+  display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.is-invalid,
+.was-validated :invalid {
+  border-color: $color-like-nav;
+}

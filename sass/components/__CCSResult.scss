@@ -1,0 +1,30 @@
+.moneySaved{
+    color: $color-secondary;
+}
+
+.forsomePara{
+    font-size: $font-size-element;
+    span{
+        color: $color-like-nav;
+        font-size: $font-size-normal-title;
+
+    }
+}
+
+.disclaimer{
+    span{
+        color: $color-like-nav;
+        font-weight: 600;
+        font-size: $font-size-normal-title;
+    }
+    p{
+        font-size: $font-size-normal-elememt;
+        font-family: $font-family-some;
+        font-weight: 500;
+    }
+}
+
+.result{
+    font-size: $font-size-small;
+    font-weight: 500;
+}

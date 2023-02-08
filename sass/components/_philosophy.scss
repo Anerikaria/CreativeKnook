@@ -1,0 +1,187 @@
+@mixin philosophy-home {
+  .philosophy {
+    &__upper {
+      @include grid();
+      font-size: $font-size-small;
+      font-family: $font-family-some;
+      margin: $default-margin-to-all;
+            @include respond(tab-land) {
+        margin: 2rem;
+        line-height: 2rem;
+      }
+      
+      &__one {
+        @include philosophy-to-all();
+      }
+      &__two {
+        @include philosophy-to-all();
+      }
+      &__three {
+        @include philosophy-to-all();
+        @include respond(tab-land) {
+          margin-bottom: 6rem;
+        }
+      }
+    }
+    &__bottom {
+      display: grid;
+      padding-left: 30rem;
+      padding-right: 30rem;
+      grid-template-columns: repeat(2, 1fr);
+      font-size: $font-size-small;
+      font-family: $font-family-some;
+      justify-items: center;
+      column-gap: 7rem;
+      @include respond(normal) {
+        display: grid;
+        font-size: $font-size-small-normal;
+        padding-left: 25rem;
+        padding-right: 25rem;
+        grid-template-columns: repeat(autofit, minmax(50em, 1fr));
+        font-family: $font-family-some;
+        justify-items: center;
+        column-gap: 5rem;
+      }
+      @include respond(tab-land) {
+        // padding-left: 20rem;
+        // padding-right: 20rem;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(10em, 1fr));
+        // column-gap: 4rem;
+        line-height: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        // padding: 2rem 4rem;
+      }
+      // @include respond(tab-port) {
+      //   padding-left: 20rem;
+      //   padding-right: 20rem;
+      //   font-family: $font-family-some;
+      //   column-gap: 4rem;
+      // }
+      // @include respond(phone) {
+      //   padding-left: 10rem;
+      //   padding-right: 10rem;
+      //   font-family: $font-family-some;
+      //   column-gap: 2rem;
+      // }
+
+      &__four {
+        @include philosophy-to-all();
+        @include respond(tab-land) {
+          margin-bottom: 7rem;
+        }
+      }
+      &__five {
+        @include philosophy-to-all();
+      }
+    }
+    &-title {
+      span {
+        color: $color-primary-darker;
+        font-size: $font-size-normal-elememt;
+        font-weight: 550;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      p{
+        font-size: $font-size-small;
+        font-weight: 500;
+        color: black;
+      }
+      .learn--more {
+        text-decoration: none;
+        color: $color-primary-darker;
+        font-family: $font-family;
+        position: relative;
+        &:hover {
+          color: $color-tertiary-darker;
+          transform: translateX(1rem);
+          position: absolute;
+        }
+      }
+    }
+    &-figure {
+      display: flex;
+      justify-content: center;
+      height: 6rem;
+    }
+  }
+}
+
+/* FEATURES */
+.lazy-img {
+  filter: blur(20px);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  @include respond(normal){
+    gap: 0.5rem;
+  }
+  @include respond(tab-land) {
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 4.5rem;
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 14rem;
+    align-self: center;
+  }
+
+  &__feature {
+    align-self: center;
+    justify-self: center;
+    width: 70%;
+    font-size: 2rem;
+    padding-top: 3rem;
+
+    img {
+      border-radius: 4rem;
+    }
+    p {
+      font-style: $font-family;
+      font-size: $font-size-normal-elememt-normal;
+    }
+  }
+
+  .philosophy--img{
+    height: 7rem;
+    width: 7rem;
+    @include respond(phone){
+      height: 3.5rem;
+      width: 3.5rem;
+    }
+  }
+  &-figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-white;
+    fill: $color-in-grey;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    @include respond(phone){
+      height: 5rem;
+      width: 5rem;
+    }
+  }
+
+  // &-figure {
+  //   height: 6.5rem;
+  //   width: 6.5rem;
+  //   fill: $color-white;
+  // }
+
+  &__header {
+    font-size: $font-size-normal-title;
+    margin-bottom: 1rem;
+  }
+}

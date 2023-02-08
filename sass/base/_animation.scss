@@ -1,0 +1,82 @@
+//
+
+//Animation for header text...
+@keyframes movefromTop {
+  //aimation starts
+  0% {
+    opacity: 0;
+    transform: translateY(-7rem);
+  }
+  //when animation finish
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes movefromBottom {
+  //when aimation starts
+  0% {
+    opacity: 0;
+    transform: translateY(7rem);
+  }
+  10%{
+    opacity: 0;
+  }
+
+  70%{
+    opacity: 0;
+
+  }
+  //when animation finish
+  100% {
+    opacity: 1;;
+    transform: translate(0);
+  }
+}
+@keyframes movefromright {
+  0% {
+    opacity: 0;
+    transform: translateX(9rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes movefromleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-9rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes movefromTopImg {
+  //aimation starts
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  //when animation finish
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

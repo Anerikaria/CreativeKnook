@@ -1,0 +1,131 @@
+/* HEADER */
+@import '../abstracts/variable';
+@import '../base/animation';
+
+@mixin animation-style($nameOfAnimation, $time) {
+  animation: $nameOfAnimation $time ease-out;
+  backface-visibility: hidden;
+}
+
+@mixin header-style {
+  .header {
+    @include header-all(
+      ($gradient-tertiary-darker, url(/images/image4.jpeg)),
+      100vh
+    );
+    
+
+    // &__main {
+    //   // @include video-background();
+    // }
+    &__about {
+      @include header-all(
+        ($gradient-tertiary-darker, url(/images/image0.jpeg)),
+        100vh
+      );
+    }
+      // @include respond(phone) {
+      //   @include header-all(
+      //     ($gradient-tertiary, url(/images/play-img--1.jpeg)),
+      //     15vh
+      //   );
+      // }
+      // @include respond(tab-port) {
+      //   @include header-all(
+      //     ($gradient-tertiary, url(/images/play-img--1.jpeg)),
+      //     25vh
+      //   );
+      // }
+      // @include respond(tab-land) {
+      //   @include header-all(
+      //     ($gradient-tertiary, url(/images/play-img--1.jpeg)),
+      //     35vh
+      //   );
+      // }
+     
+    
+   
+    &__title {
+      align-items: center;
+      flex-wrap: wrap;
+      overflow: hidden;
+      justify-content: center;
+      padding: 30rem 8rem;
+      @include respond(normal){
+        padding: 17rem 4rem;
+      }
+    }
+    &-primary {
+      font-size: $font-size-big-title;
+      letter-spacing: 1rem;
+      color: $color-white;
+      font-weight: 700;
+      @include animation-style(movefromTop, 1s);
+      @include respond(normal){
+        font-size: $font-size-normal-title;
+      }
+    }
+    &-secondary {
+      font-size: $font-size-element;
+      font-family: $font-family-some;
+      line-height: 4rem;
+      align-items: center;
+      font-weight: 800;
+      color: #e8efdefa;
+      animation: movefromBottom  ease-in 1.5s;
+      @include respond(normal){
+        font-size: $font-size-normal-elememt ;
+        font-weight: 900;
+      }
+    }
+  }
+  .header__main {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0.2rem;
+  }
+  .header__pic {
+    height: 100rem;
+    clip-path: polygon(0 0, 60% 0, 60% 60%, 0 60%);
+    transform: translateY(14rem);
+
+    &--img2 {
+      height: 100%;
+      justify-self: center;
+    }
+  }
+  .header__about {
+    display: flex;
+    justify-self: center;
+    font-size: 6rem;
+    @include respond(normal) {
+      font-size: 4rem;
+    }
+    @include respond(tab-land) {
+      font-size: 3rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3rem;
+    }
+    @include respond(phone) {
+      font-size: 2.7rem;
+    }
+    color: $color-white;
+
+    &-headings {
+      margin-top: 20rem;
+      align-self: center;
+      div {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &-pic {
+      img {
+        height: 50rem;
+        border-radius: 7rem;
+      }
+    }
+  }
+}

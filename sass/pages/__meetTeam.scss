@@ -1,0 +1,108 @@
+.teamimage {
+  margin-bottom: 8rem;
+  &__img {
+    max-width: 100%;
+    border-radius: 12rem;
+    box-shadow: $box-shadow-big;
+    width: 100%;
+    height: 60%;
+
+  }
+  p {
+    padding: 0 5rem;
+    padding-top: 7rem;
+    font-size: $font-size-element;
+  }
+}
+
+.list-item {
+  font-size: $font-size-element;
+  list-style: none;
+}
+.list-item::before {
+  content: '';
+  display: inline-block;
+  height: 1.7rem;
+  width: 1.7rem;
+  margin-right: 0.5rem;
+  background-image: url(/images/chevron-thin-right.svg);
+  background-size: cover;
+
+  //Newer browsers - masks
+  @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+    background-color: $color-like-nav;
+    -webkit-mask-image: url(/images/chevron-thin-right.svg);
+    -webkit-mask-size: cover;
+    mask-image: url(/images/chevron-thin-right.svg);
+    mask-size: cover;
+    background-image: none;
+  }
+}
+
+
+.meetTeam {
+  &__features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    align-items: center;
+    
+    @include respond(normal) {
+      display: grid;
+      grid-template-columns: 100%;
+      column-gap: 4rem;
+      line-height: 4rem;
+      row-gap: 7rem;
+      .feature1 {
+        padding: 3rem 0;
+        border-bottom: 0.1rem ridge $color-like-nav;
+      }
+    }
+    @include respond(tab-land) {
+         .feature1 {
+        padding: 3rem 0;
+        border-bottom: 0.1rem ridge $color-like-nav;
+      }
+    }
+
+    img {
+      border-radius: 14rem;
+      box-shadow: $box-shadow-light;
+      max-height: 65rem;
+      min-height: 20rem;
+      object-fit: cover;
+      @include respond(normal){
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__staffdetail {
+    h3 {
+      font-size: $font-size-normal-title;
+      color: $color-primary;
+      border-bottom: 1mm ridge $color-like-nav;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      text-align: center;
+      @include respond(tab-land) {
+        border-bottom: none;
+      }
+    }
+    &__staff1 {
+      box-shadow: 5rem 1rem 1rem rgb($color: #000, $alpha: 0.1);
+    }
+
+    p {
+      font-size: $font-size-element;
+    }
+  }
+}
+.staffdetail__staff2,
+.staffdetail__staff4 {
+  box-shadow: 5rem 1rem 0.7rem rgb($color: #000, $alpha: 0.1);
+}
+.staffdetail__staff1,
+.staffdetail__staff3 {
+  box-shadow: -5rem 1rem 0.7rem rgb($color: #000, $alpha: 0.1);
+}

@@ -1,0 +1,27 @@
+@mixin intro {
+  .row__intro {
+    background-color: inherit;
+    backface-visibility: hidden;
+  }
+  .director-shape {
+    height: 20rem;
+    width: 20rem;
+    float: left;
+    shape-outside: circle(80% at 20% 25%);
+    clip-path: circle(80% at 20% 25%);
+    transform: translateX(-3rem);
+    &--image {
+      height: 100%;
+    }
+  }
+  .director-title {
+    h1 {
+      color: $color-primary;
+      font-size: $font-size-normal-title;
+    }
+    p {
+      font-size: $font-size-element;
+      font-family: $font-family-some;
+    }
+  }
+}
