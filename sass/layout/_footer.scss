@@ -128,7 +128,7 @@
     display: flex;
     width: 50%;
     justify-content: space-between;
-   font-size: $font-size-element;
+   font-size: $font-size-normal-title;
    @include respond(normal){
     width: 70%;
    }

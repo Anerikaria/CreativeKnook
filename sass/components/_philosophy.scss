@@ -137,9 +137,10 @@
   &__feature {
     align-self: center;
     justify-self: center;
-    width: 70%;
+    width: 100%;
     font-size: 2rem;
     padding-top: 3rem;
+    padding: 0 2rem;
 
     img {
       border-radius: 4rem;
@@ -153,15 +154,22 @@
   .philosophy--img{
     height: 7rem;
     width: 7rem;
+    transform: translate(25rem, -5%);
+    @include respond(normal){
+      transform: translate(16rem, -3%);
+    }
+
+    
+
     @include respond(phone){
-      height: 3.5rem;
-      width: 3.5rem;
+      height: 7rem;
+      width: 7rem;
     }
   }
   &-figure {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    // align-items: center;
+    // justify-content: center;
     background-color: $color-white;
     fill: $color-in-grey;
     height: 8rem;

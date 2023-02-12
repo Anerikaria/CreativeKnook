@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     font-size: $font-size-normal-title;
+    
   
   }
   .navigation {
@@ -231,16 +232,18 @@
               }
     }
     &-buttons {
-      width: 3rem;
+      width: 6rem;
+      display: flex;
       justify-content: flex-end;
-      padding: 1rem;
+      padding: 0.7rem;
       @include respond(normal){
+        width: 100%;
         display: flex;
         justify-content: flex-end;
       }
 
       a {
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-decoration: none;
         cursor: pointer;
       }
@@ -256,7 +259,8 @@
     
   }
   .fa-facebook {
-    background-color: #f9b9b8f2;
+    background: #3B5998;
+    color: $color-white;
     
   }
 

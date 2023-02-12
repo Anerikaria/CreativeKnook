@@ -43,9 +43,9 @@
 }
 
 .col {
-  border-bottom: 0.1rem ridge $color-like-nav;
-  padding: 10rem 3rem;
-  margin: 10rem 12rem;
+  // border-bottom: 0.1rem ridge $color-like-nav;
+  // padding: 10rem 3rem;
+  margin-top:10rem;
   @include respond(tab-port) {
     padding: 3rem 4rem;
     margin: 4rem 4rem;

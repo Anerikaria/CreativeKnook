@@ -233,6 +233,12 @@
 //   max-width: 10rem;
 // }
 
+.simplelink{
+  text-decoration: none;
+  list-style: none;
+  list-style: none;
+}
+
 .col-1-of-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -298,15 +304,15 @@
 .col-1-of-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 4rem;
+  column-gap: 6rem;
   margin: 12rem 10rem;
   align-self: center;
   justify-content: center;
 
   @include respond(normal) {
-    grid-template-columns: repeat(auto-fit, 20em);
-    column-gap: 2rem;
-    margin: 10rem 8rem;
+    grid-template-columns: repeat(auto-fit, 25em);
+    column-gap: 3rem;
+    margin: 10rem 4rem;
     overflow: hidden;
   }
   @include respond(tab-land) {
