@@ -1,16 +1,20 @@
 .operations {
   background-color: $color-forth;
   border-radius: 2rem;
-  margin: 4rem auto 0 auto;
+  // margin: 4rem auto 0 auto;
 }
 
 .operations__tab-container {
   display: flex;
   justify-content: center;
+  padding-left: .2rem;
+  margin: 0;
 }
 
 .operations__tab {
-  margin-right: 2.5rem;
+  margin: 0 .5rem;
+  display: flex;
+  justify-content: space-around;
   transform: translateY(-35%);
 }
 
@@ -44,7 +48,7 @@
   display: none;
   /* JUST PRESENTATIONAL */
   font-size: 2.2rem;
-  padding: 2.5rem 7rem 6.5rem 7rem;
+ padding: 3.2rem;
   @include respond(normal){
     font-size: $font-size-small;
   }

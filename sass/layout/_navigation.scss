@@ -51,7 +51,11 @@
         top: 1.5rem;
         right: 3rem;
       }
+
+    
     }
+
+  
 
     &__background {
       height: 6rem;
@@ -60,7 +64,7 @@
       position: fixed;
       top: 0rem;
       right: 6.5rem;
-      background-image: radial-gradient($color-white,$color-secondary,  #000);
+      background-image: radial-gradient($color-white,$color-white,$color-white,$color-like-nav,$color-white,$color-white, $color-white,  #000);
       z-index: 1000;
       transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 
@@ -74,6 +78,10 @@
         right: 3.5rem;
       }
     }
+
+    // .navigation__button{
+    //   padding: 0;
+    // }
 
     &__nav {
       padding-top: 5rem;
@@ -100,8 +108,16 @@
     }
 
     &__item {
+      display: flex;
+      justify-content: center;
       overflow-y: auto;
-      
+      &-button{
+        background-color: $color-like-nav;
+        text-align: center;
+        width: 30%;
+        border-radius: 5rem;
+        padding: 0.5rem 0;
+      }
     }
 
     &__link {
@@ -126,6 +142,11 @@
                span {
           margin-right: 1.5rem;
           display: inline-block;
+        }
+
+        img{
+          width: 5rem;
+          height: 5rem;
         }
       }
 
@@ -198,6 +219,18 @@
       top: 0;
       transform: rotate(-135deg);
     }
+
+    .navigation__booktour{
+      padding:2rem 2.2rem;
+      background-color: $color-like-nav;
+      border: none;
+      font-size: $font-size-normal-elememt-normal;
+      color: #363434;
+      border-radius: 5rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-family: $font-family;
+    }
   }
 
   .nav__main {
@@ -212,7 +245,7 @@
     }
     display: flex;
     justify-content: space-between;
-    height: 5.4vh;
+    height: 6.4vh;
     background-color: $color-header-footer;
     padding: 0 18rem;
     text-align: center;
@@ -243,9 +276,13 @@
       }
 
       a {
-        font-size: 2rem;
         text-decoration: none;
         cursor: pointer;
+        margin-right: 2rem;
+        img{
+          width: 3rem;
+          height: 2.5rem;
+        }
       }
     }
   }
@@ -411,7 +448,7 @@
     }
 
     &__link--btn {
-      padding: 0.75rem 1.25rem;
+      padding: 1rem 1.25rem;
       border-radius: 4rem;
       font-size: 1rem;
       letter-spacing: 0.15rem;

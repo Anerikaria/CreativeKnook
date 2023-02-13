@@ -20,7 +20,7 @@
     @include respond(tab-land) {
       float: left;
       position: relative;
-      width: 50%;
+      width: 60%;
       box-shadow: $box-shadow;
     }
 
@@ -40,11 +40,11 @@
 
       @include respond(tab-land) {
         top: 0;
-        transform: scale(1.2);
+        transform: scale(1.4);
       }
       @include respond(tab-port) {
         top: 0;
-        transform: scale(1.2);
+        transform: scale(1.4);
       }
     }
     &--p2 {
@@ -52,12 +52,12 @@
       top: 5rem;
       @include respond(tab-land) {
         top: -2;
-        transform: scale(1.4);
+        transform: scale(1.5);
         z-index: 100;
       }
       @include respond(tab-port) {
         top: -1;
-        transform: scale(1.4);
+        transform: scale(1.5);
         z-index: 100;
       }
     }
@@ -66,12 +66,12 @@
       top: 15rem;
       @include respond(tab-land) {
         top: 0;
-        transform: scale(1.2);
+        transform: scale(1.6);
       }
       @include respond(tab-port) {
         top: 0;
         left: 0;
-        transform: scale(1.2);
+        transform: scale(1.6);
       }
     }
     &:hover {

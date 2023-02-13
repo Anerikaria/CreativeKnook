@@ -1,6 +1,6 @@
 @mixin footer-style {
   .footer {
-    height: 60vh;
+    height: 65vh;
   
     @include respond(normal) {
       height: 100%;
@@ -127,8 +127,13 @@
    .socialmedia {
     display: flex;
     width: 50%;
-    justify-content: space-between;
-   font-size: $font-size-normal-title;
+    justify-content: space-around;
+   font-size: 4rem;
+    a{
+      img{
+        width: 4rem;
+      }
+    }
    @include respond(normal){
     width: 70%;
    }

@@ -109,20 +109,15 @@
   }
 }
 .u-margin-top {
-  margin-top: 6rem;
+  margin-top: 10rem;
 
   @include respond(normal) {
-    margin-top: 2rem;
+    margin-top: 7rem;
   }
   @include respond(tab-land) {
-    margin-top: 1.5rem;
+    margin-top: 5rem;
   }
-  @include respond(tab-port) {
-    margin-top: 1rem;
-  }
-  @include respond(phone) {
-    margin-top: 0rem;
-  }
+  
 }
 
 .u-padding-to-all {

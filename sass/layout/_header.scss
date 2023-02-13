@@ -116,6 +116,9 @@
     &-headings {
       margin-top: 20rem;
       align-self: center;
+      @include respond(phone){
+        margin-top: 16rem;
+      }
       div {
         display: flex;
         justify-content: center;

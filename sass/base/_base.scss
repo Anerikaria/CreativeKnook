@@ -15,6 +15,7 @@ body {
   font-weight: 500;
   color: $nav-color-font;
   line-height: 1.7;
+  overflow-x: hidden;
   background-color: $color-white;
   box-sizing: border-box;
 }
@@ -71,18 +72,16 @@ align-items: center;
 
 .headings-title-forall{
   color: $color-primary;
-  font-size: 2.8rem;
+  font-size: $font-size-big-title;
   
 }
 
 .forsomepara{
   font-size: $font-size-element;
-  @include respond(normal){
-    font-size: $font-size-normal-elememt;
+  
   }
-}
 
 .forsometitle{
   color: $color-primary;
-  font-size: $font-size-element;
+  font-size: 3rem;
 }

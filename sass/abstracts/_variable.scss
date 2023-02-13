@@ -54,14 +54,14 @@ $height: 100%;
 //For  fonts
 // $default-frontSize: 62.5%;
 $font-family: 'Josefin Sans', serif;
-$font-size-big-title-normal : 2.2rem;
-$font-size-normal-elememt-normal: 2.2rem;
+$font-size-big-title-normal : 2.4rem;
+$font-size-normal-elememt-normal: 2.3rem;
 $font-size-small-normal: 1.5rem;
 $font-size-big-title: 3.5rem;
 $font-size-normal-title: 3rem; //used in director title
 $font-size-element: 2.5rem;
 $font-size-small: 1.7rem;
-$font-size-normal-elememt: 2rem;
+$font-size-normal-elememt: 2.3rem;
 $font-family-some: 'Josefin Sans', sans-serif;
 
 //padding between layouts for all
@@ -99,6 +99,15 @@ $borderradiusfourrem: 4rem;
 
 @include respond(phone) {
   $font-family: 'Josefin Sans', serif;
+
+  $font-size-big-title-normal : 2.1rem;
+$font-size-normal-elememt-normal: 2.1rem;
+$font-size-small-normal: 1.5rem;
+$font-size-big-title: 2.5rem;
+$font-size-normal-title: 2.2rem; //used in director title
+$font-size-element: 2.3rem;
+$font-size-small: 1.7rem;
+$font-size-normal-elememt: 2rem;
 
   //for fonts
   // $font-size-big-title: 1.3rem;

@@ -1,10 +1,14 @@
 .covid19 {
+  &-span{
+    color: $color-tertiary-darker;
+    font-size: $font-size-element;
+    font-weight: 600;
+  }
   &__heading {
     @include heading-text(center);
-    span {
-      color: $color-tertiary-darker;
-    }
-  }
+      }
+    
+
 
   &__safetyplans {
     background-color: $color-forth;

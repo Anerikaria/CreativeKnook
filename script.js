@@ -30,7 +30,8 @@ const overlay = document.querySelector('.overlay');
 const btnCloseModal = document.querySelector('.btn--close-modal');
 const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
 
-const fname = document.getElementById('fname');
+const fname = document.getElementById('fname').value;
+
 // const lastName = document.getElementById('lname');
 // const email = document.getElementById('email');
 // const contactNumber = document.getElementById('cnumber');
@@ -391,7 +392,6 @@ callUs?.addEventListener('click', function (e) {
 // Tabbed component
 
 function openTab(tab) {
-  console.log('tab');
 }
 
 const tabs = document.querySelectorAll('.operations__tab');
@@ -401,7 +401,6 @@ let activeClass = document.querySelector('.operations__tab--active');
 
 tabsContainer?.addEventListener('click', function (e) {
   let clicked = e.target.closest('.operations__tab');
-  console.log(clicked);
 
   // Ignore click if its outside of the button
   // Guard clause
@@ -432,7 +431,6 @@ function test(entries) {
   //This callback function will return an array of entries, even if you are
   //only observing a single item.
   entries.forEach(entry => {
-    console.log(entry);
     if (!entry.isIntersecting) {
       backtoTop.style.opacity = 1;
     } else {
@@ -523,12 +521,10 @@ let calculateFinalValue = function(){
     perHourRange = 9.5
   }
 
-console.log(perHourRange);
 
 //Getting Original Value
 let originalvalue = 
 Math.ceil(days = perHourRange * (Number(document.querySelector('.numberOfDays').value) * 11));
-console.log(originalvalue);
 
 OriginalFee.textContent =`Fees without Subsidy: AU$${originalvalue}`
 
@@ -591,7 +587,6 @@ if (incomeInput.value > initialIncome && incomeInput.value <= 177466) {
   incomeInput.value > Number(346756) &&
   incomeInput.value <= Number(356756)
 ) {
-  console.log('Family income is between 256756 and 356756');
   let per = Number(20);
   // resultCCSPercentage.textContent = `Your CCS Percentage based on Your family Income : ${per} `;
   let calculatedHourlyCSS = perHourRange * (per / 100);
@@ -654,7 +649,6 @@ const message = document.getElementById('message');
 formSubmit?.addEventListener('submit', function (e) {
 
   const formData = new FormData(formSubmit);
-  console.log(formData);
   e.preventDefault();
   var object = {};
   formData.forEach((value, key) => {
@@ -678,12 +672,10 @@ formSubmit?.addEventListener('submit', function (e) {
         // result.classList.remove('text-gray-500');
         // result.classList.add('text-green-500');
       } else {
-        console.log(response);
         resultcheck.innerHTML = 'Contact Us Form';
       }
     })
     .catch(error => {
-      console.log(error);
       resultcheck.innerHTML = 'Something went wrong!';
     })
     .then(function () {
@@ -694,13 +686,21 @@ formSubmit?.addEventListener('submit', function (e) {
       }, 1000);
     });
 });
+
+
 //form calculator
 const formCalc = document.querySelector('.formcalc');
 let Summary = document.querySelector('.btn__summary');
-
+// let paraAppear = document.querySelector('. mt-1');
+let formData;
 
 Summary?.addEventListener('click', function (e) {
-  const formData = new FormData(formCalc);
+  if(Summary.classList.contains('validation')){
+    checkvalidations();
+    
+  }
+  else{
+  formData = new FormData(formCalc);
   console.log(formData);
   e.preventDefault();
   var object = {};
@@ -735,6 +735,7 @@ Summary?.addEventListener('click', function (e) {
       setTimeout(() => {
       }, 1000);
     });
+  }
 });
 
 //for Enroll Form
@@ -743,11 +744,13 @@ const formEnroll = document.querySelector('.modal__form');
 const result = document.getElementById('result');
 
 formEnroll?.addEventListener('submit', function(e){
+
+  if (dateValidation()) {
   e.preventDefault();
+  
+  console.log("here");
   const formData = new FormData(formEnroll);
-  console.log(formData);
   const object = Object.fromEntries(formData);
-  console.log(object);
   const json = JSON.stringify(object);
   result.innerHTML = "Please wait..."
    
@@ -765,12 +768,10 @@ formEnroll?.addEventListener('submit', function(e){
       result.innerHTML = json.message;
     }
     else{
-      console.log(response);
       result.innerHTML = json.message
     }
    })
    .catch(error => {
-    console.log(error);
     result.innerHTML = 'Something went wrong!';
    })
    .then(function(){
@@ -779,6 +780,12 @@ formEnroll?.addEventListener('submit', function(e){
       result.style.display ="none";
     }, 3000);
    });
+  } else {
+  
+    result.innerHTML = 'Please Select the Start date Correctly!'
+    e.preventDefault();
+  
+  }
 });
 
 // //For Carrer Page
@@ -877,11 +884,54 @@ formCareer?.addEventListener("submit", function (e) {
     });
 });
 
+const dateValidation = function() {
+  let startDate = document.getElementById('DateofStart').value;
+  let varDate = new Date(startDate);
+  let todayDate = new Date();
 
-
-//Javascript validation
-const validations = function(){
-  if(fname === "" || fname == null){
-
+  if (varDate >= todayDate) {
+    console.log("COrrect date");
+    return true;
+  } else {
+    console.log("Wrong Date");
+    return false;
   }
 }
+
+const checkvalidations = function(){
+ const activityHours = document.querySelector('.activity__hours').value;
+ const familyIncome = document.querySelector('.income__value').value;
+ const radionzerototwo = document.querySelector('.zerotwo').value;
+ const radiotwotofour = document.querySelector('.twofour').value;
+ const radiofourtofive = document.querySelector('.fourfive').value;
+ let datatoCheckdown = document.querySelectorAll('.fordata');
+ const income = document.querySelector('.income');
+ const activityHoursPara = document.querySelector('.activityhours');
+ const selectAge = document.querySelector('.age');
+
+
+//  if (activityHours == "" || activityHours == null ) {
+//   console.log(datatoCheckdown[0]);
+//   datatoCheckdown[0].classList.remove('empty-feedback');
+//   datatoCheckdown[0].style.color = 'red'
+//   console.log(datatoCheckdown[0]);
+//  } 
+
+// if (activityHours => 8 || activityHours <= 100){
+//   datatoCheckdown[0].classList.add('empty-feedback');
+// }
+
+//  if(familyIncome == "" || familyIncome == null){
+//   datatoCheckdown[1].classList.remove('empty-feedback');
+//   datatoCheckdown[1].style.color = 'red'
+
+// }
+//  if(radionzerototwo == "" || radiotwotofour == "" || radiofourtofive == ""){
+//   datatoCheckdown[2].style.color = 'red'
+//   datatoCheckdown[2].classList.remove('empty-feedback');
+
+// }
+
+
+}
+
