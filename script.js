@@ -421,8 +421,30 @@ tabsContainer?.addEventListener('click', function (e) {
     .classList.add('operations__content--active');
 });
 
+
+
+
 //Back to Top-------------------------------------------------------------------------
-const backtoTop = document.querySelector('.top');
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 400) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '400');
+});
+
+
+
+
+
+const backtoTop = document('.top');
 const headerCheck = document.querySelector('.otherlinks');
 
 const rootEle = document.documentElement;
