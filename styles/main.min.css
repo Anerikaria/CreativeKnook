@@ -82,6 +82,7 @@
 
 html {
   font-size: 62.5%;
+  width: 100vw;
 }
 
 body {
@@ -89,6 +90,7 @@ body {
   font-weight: 500;
   color: #444;
   line-height: 1.7;
+  width: 100vw;
   overflow-x: hidden;
   background-color: #fff;
   box-sizing: border-box;
@@ -678,7 +680,7 @@ body {
 }
 .features__feature p {
   font-style: "Josefin Sans", serif;
-  font-size: 2.3rem;
+  font-size: 2.2rem;
 }
 .features .philosophy--img {
   height: 7rem;
@@ -852,7 +854,7 @@ body {
 }
 .features__feature p {
   font-style: "Josefin Sans", serif;
-  font-size: 2.3rem;
+  font-size: 2.2rem;
 }
 .features .philosophy--img {
   height: 7rem;
@@ -917,7 +919,7 @@ body {
   transition: all 0.2s;
   position: relative;
   overflow: hidden;
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   border: 2.5px solid #94da3f;
   cursor: pointer;
   text-align: center;
@@ -1154,7 +1156,7 @@ textarea:focus {
   place-self: end;
   cursor: pointer;
   /* visual styling */
-  width: 5.8rem;
+  width: 6rem;
   box-shadow: 0 2rem 9rem rgba(0, 0, 0, 0.8);
   aspect-ratio: 1;
   background: #ef5552;
@@ -1255,7 +1257,7 @@ textarea:focus {
   font-size: 3rem;
 }
 .disclaimer p {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 500;
 }
@@ -1345,7 +1347,7 @@ textarea:focus {
 }
 @media (max-width: 112.5em) {
   .aboutitle .list-item {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
 }
 .aboutitle .list-item::before {
@@ -1402,7 +1404,7 @@ textarea:focus {
 }
 @media (max-width: 112.5em) {
   .about__contact div p {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
 }
 .about__contact-sub2 {
@@ -1549,7 +1551,7 @@ textarea:focus {
 @media (max-width: 112.5em) {
   .accordion__1 .accordion-item-body-content, .accordion__3 .accordion-item-body-content {
     line-height: 3rem;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
 }
 .accordion__2 .accordion, .accordion__4 .accordion {
@@ -1626,7 +1628,7 @@ textarea:focus {
 @media (max-width: 112.5em) {
   .accordion__2 .accordion-item-body-content, .accordion__4 .accordion-item-body-content {
     line-height: 3rem;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -1720,7 +1722,8 @@ textarea:focus {
   outline: #94da3f;
   font-size: 1.7rem;
   font-family: "Josefin Sans", sans-serif;
-  padding: 1.5rem 2rem;
+  padding: 1.7rem 2rem;
+  margin: 2rem 0;
   border-radius: 0.5rem;
   border: none;
   background-color: #fff;
@@ -1735,7 +1738,7 @@ textarea:focus {
 }
 @media (max-width: 75em) {
   .contactUsContent__formtextarea {
-    margin-top: 5rem;
+    margin-top: 1.5rem;
   }
 }
 .contactUsContent__forminput:focus, .contactUsContent__formtextarea:focus {
@@ -2144,7 +2147,7 @@ textarea:focus {
 .covid19Que-item {
   width: 100%;
   box-shadow: 0 0 6rem rgba(0, 0, 0, 0.5);
-  margin: 5rem 1rem;
+  margin: 5rem 0;
   line-height: 3rem;
   padding: 5rem;
   border-radius: 0.5rem;
@@ -2276,10 +2279,10 @@ textarea:focus {
   padding-bottom: 1.5rem;
 }
 .operationsContent__para-semi {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
 }
 .operationsContent__para--list {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   display: flex;
   justify-content: space-around;
 }
@@ -2363,13 +2366,13 @@ textarea:focus {
   }
 }
 .schlRediness-info {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   align-self: center;
   font-weight: 400;
 }
 @media (max-width: 112.5em) {
   .schlRediness-info {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
 }
 @media (max-width: 75em) {
@@ -2661,6 +2664,7 @@ textarea:focus {
   display: flex;
   justify-content: center;
   overflow-y: auto;
+  padding: 0.3rem 0;
 }
 .navigation__item-button {
   background-color: #ef5552;
@@ -2671,7 +2675,7 @@ textarea:focus {
 }
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-weight: 900;
   padding: 1rem 2rem;
   color: #eb1464;
@@ -2744,7 +2748,8 @@ textarea:focus {
   padding: 2rem 2.2rem;
   background-color: #ef5552;
   border: none;
-  font-size: 2.3rem;
+  margin-top: 0.3rem;
+  font-size: 2.5rem;
   color: #363434;
   border-radius: 5rem;
   font-weight: 600;
@@ -2936,7 +2941,7 @@ textarea:focus {
   width: 100%;
 }
 .nav__link:link, .nav__link:visited, .nav__link:focus {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   font-weight: 500;
   color: inherit;
   text-decoration: none;
@@ -3069,7 +3074,7 @@ textarea:focus {
 }
 @media (max-width: 112.5em) {
   .header-secondary {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     font-weight: 900;
   }
 }
@@ -3188,7 +3193,7 @@ textarea:focus {
 @media (max-width: 112.5em) {
   .section__whyus .why__us-title p {
     line-height: 3.5rem;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
 }
 @media (max-width: 75em) {
@@ -3214,8 +3219,6 @@ textarea:focus {
   box-shadow: 0 0 6rem rgba(0, 0, 0, 0.5);
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
 }
 @media (max-width: 112.5em) {
   .section__whyus .why-us--img {
@@ -3276,7 +3279,7 @@ textarea:focus {
   row-gap: 7rem;
   place-self: center stretch;
   justify-items: center;
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   font-family: "Josefin Sans", sans-serif;
   margin: 5rem 0;
 }
@@ -3353,9 +3356,9 @@ textarea:focus {
 @media (max-width: 112.5em) {
   .section__philosophycover .philosophy__bottom {
     display: grid;
-    font-size: 2.3rem;
-    padding-left: 25rem;
-    padding-right: 25rem;
+    font-size: 2.2rem;
+    padding-left: 19rem;
+    padding-right: 19rem;
     grid-template-columns: repeat(autofit, minmax(50em, 1fr));
     font-family: "Josefin Sans", sans-serif;
     justify-items: center;
@@ -3411,7 +3414,7 @@ textarea:focus {
   justify-content: center;
 }
 .section__philosophycover .philosophy-title p {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   line-height: 3.2rem;
   font-weight: 500;
   color: black;
@@ -3649,7 +3652,7 @@ textarea:focus {
   font-size: 2.5rem;
 }
 .section__Curriculum .curriculum__title p {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   padding: 0 1rem;
   line-height: 3.2rem;
   justify-content: center;
@@ -3864,14 +3867,14 @@ textarea:focus {
 }
 @media (max-width: 112.5em) {
   .footer__item h1 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
 }
 .footer__item-sub {
   justify-self: center;
   justify-content: center;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   color: #088294;
 }
 @media (max-width: 112.5em) {
@@ -3909,9 +3912,14 @@ textarea:focus {
 @media (max-width: 75em) {
   .footer__item-sub ul {
     width: 100%;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     justify-self: center;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 37.5em) {
+  .footer__item-sub ul {
+    font-size: 1.9rem;
   }
 }
 @media (max-width: 37.5em) {
@@ -3935,9 +3943,14 @@ textarea:focus {
 @media (max-width: 37.5em) and (max-width: 75em) {
   .footer__item-sub ul {
     width: 100%;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     justify-self: center;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 37.5em) and (max-width: 37.5em) {
+  .footer__item-sub ul {
+    font-size: 1.9rem;
   }
 }
 @media (max-width: 56.25em) {
@@ -3961,9 +3974,14 @@ textarea:focus {
 @media (max-width: 56.25em) and (max-width: 75em) {
   .footer__item-sub ul {
     width: 100%;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     justify-self: center;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 56.25em) and (max-width: 37.5em) {
+  .footer__item-sub ul {
+    font-size: 1.9rem;
   }
 }
 @media (max-width: 75em) {
@@ -3987,9 +4005,14 @@ textarea:focus {
 @media (max-width: 75em) and (max-width: 75em) {
   .footer__item-sub ul {
     width: 100%;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     justify-self: center;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 75em) and (max-width: 37.5em) {
+  .footer__item-sub ul {
+    font-size: 1.9rem;
   }
 }
 @media (max-width: 112.5em) {
@@ -4013,9 +4036,14 @@ textarea:focus {
 @media (max-width: 112.5em) and (max-width: 75em) {
   .footer__item-sub ul {
     width: 100%;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     justify-self: center;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 112.5em) and (max-width: 37.5em) {
+  .footer__item-sub ul {
+    font-size: 1.9rem;
   }
 }
 .footer__item-sub ul li a {

@@ -8,6 +8,7 @@
 html {
   //This defines what 1rem is
   font-size: 62.5%;
+  width: 100vw;
 }
 
 body {
@@ -15,6 +16,7 @@ body {
   font-weight: 500;
   color: $nav-color-font;
   line-height: 1.7;
+  width: 100vw;
   overflow-x: hidden;
   background-color: $color-white;
   box-sizing: border-box;

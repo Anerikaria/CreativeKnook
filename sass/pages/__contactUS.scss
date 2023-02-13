@@ -70,7 +70,8 @@
     outline: $color-secondary;
     font-size: $font-size-small;
     font-family: $font-family-some;
-    padding: 1.5rem 2rem;
+    padding: 1.7rem 2rem;
+    margin: 2rem 0;
     border-radius: 0.5rem;
     border: none;
     background-color: $color-white;
@@ -83,7 +84,7 @@
   &__formtextarea {
     width: 100%;
     @include respond(tab-land) {
-      margin-top: 5rem;
+      margin-top: 1.5rem;
     }
   }
 

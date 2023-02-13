@@ -111,6 +111,7 @@
       display: flex;
       justify-content: center;
       overflow-y: auto;
+      padding: .3rem 0;
       &-button{
         background-color: $color-like-nav;
         text-align: center;
@@ -124,7 +125,7 @@
       &:link,
       &:visited {
         display: inline-block;
-        font-size: $font-size-big-title-normal;
+        font-size: $font-size-element;
         font-weight: 900;
         padding: 1rem 2rem;
         color: $color-primary;
@@ -224,7 +225,8 @@
       padding:2rem 2.2rem;
       background-color: $color-like-nav;
       border: none;
-      font-size: $font-size-normal-elememt-normal;
+      margin-top: .3rem;
+      font-size: $font-size-element;
       color: #363434;
       border-radius: 5rem;
       font-weight: 600;

@@ -243,6 +243,9 @@
     justify-self: center;
     grid-template-columns: repeat(2, 1fr);
   }
+  @include respond(phone){
+    font-size: 1.9rem;
+  }
 }
 
 //Media query Manager
