@@ -13,16 +13,19 @@
     @include respond(phone) {
       display: flex;
       overflow-y: auto;
+      z-index: 1500;
 
     }
     @include respond(tab-port) {
       display: flex;
       overflow-y: auto;
+      z-index: 1500;
 
     }
     @include respond(tab-land) {
       display: flex;
       overflow-y: auto;
+      z-index: 1500;
 
     }
     &__checkbox {
@@ -60,6 +63,7 @@
     &__background {
       height: 6rem;
       width: 6rem;
+      z-index: inherit;
       border-radius: 50%;
       position: fixed;
       top: 0rem;

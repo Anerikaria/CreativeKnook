@@ -2573,18 +2573,21 @@ textarea:focus {
   .navigation {
     display: flex;
     overflow-y: auto;
+    z-index: 1500;
   }
 }
 @media (max-width: 56.25em) {
   .navigation {
     display: flex;
     overflow-y: auto;
+    z-index: 1500;
   }
 }
 @media (max-width: 75em) {
   .navigation {
     display: flex;
     overflow-y: auto;
+    z-index: 1500;
   }
 }
 .navigation__checkbox {
@@ -2618,6 +2621,7 @@ textarea:focus {
 .navigation__background {
   height: 6rem;
   width: 6rem;
+  z-index: inherit;
   border-radius: 50%;
   position: fixed;
   top: 0rem;
@@ -3180,7 +3184,7 @@ textarea:focus {
 @media (max-width: 75em) {
   .section__whyus .why__us {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
   }
 }
 .section__whyus .why__us-title {
@@ -3214,7 +3218,7 @@ textarea:focus {
   }
 }
 .section__whyus .why-us--img {
-  width: 100%;
+  width: 97%;
   border-radius: 5rem;
   box-shadow: 0 0 6rem rgba(0, 0, 0, 0.5);
   -o-object-fit: cover;
@@ -3292,7 +3296,7 @@ textarea:focus {
 @media (max-width: 75em) {
   .section__philosophycover .philosophy__upper {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 99%;
   }
 }
 @media (max-width: 75em) {

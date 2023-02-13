@@ -6,7 +6,7 @@
     backface-visibility: hidden;
     @include respond(tab-land) {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(40em, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
     }
 
     &-title {
@@ -38,7 +38,7 @@
   // }
 
   .why-us--img {
-    width: 100%;
+    width: 97%;
     border-radius: 5rem;
     box-shadow: $box-shadow;
     object-fit: cover;
