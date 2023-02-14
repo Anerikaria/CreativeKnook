@@ -3299,10 +3299,16 @@ textarea:focus {
     grid-template-columns: 99%;
   }
 }
+@media (max-width: 37.5em) {
+  .section__philosophycover .philosophy__upper {
+    width: 100%;
+  }
+}
 @media (max-width: 75em) {
   .section__philosophycover .philosophy__upper {
     margin: 2rem;
     line-height: 2rem;
+    width: 100%;
   }
 }
 .section__philosophycover .philosophy__upper__one {
@@ -3377,6 +3383,11 @@ textarea:focus {
     line-height: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .section__philosophycover .philosophy__bottom {
+    width: 100%;
   }
 }
 .section__philosophycover .philosophy__bottom__four {

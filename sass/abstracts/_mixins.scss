@@ -44,6 +44,9 @@
     // column-gap: 3rem;
     // grid-template-columns: repeat(auto-fit, minmax(3em, 1fr));
   }
+  @include respond(phone){
+    width: 100%;
+  }
 }
 
 @mixin philosophy-to-all {
