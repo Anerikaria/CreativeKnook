@@ -1150,10 +1150,12 @@ textarea:focus {
 
 .top {
   opacity: 0;
+  --offset: 1rem;
   position: fixed;
   bottom: 3.5rem;
   right: 4rem;
   place-self: end;
+  margin-top: calc(100vh + var(--offset));
   cursor: pointer;
   /* visual styling */
   width: 6rem;
@@ -1161,6 +1163,7 @@ textarea:focus {
   aspect-ratio: 1;
   background: #ef5552;
   border-radius: 10px;
+  z-index: 900;
 }
 .top:before {
   content: "";
@@ -3297,11 +3300,6 @@ textarea:focus {
   .section__philosophycover .philosophy__upper {
     display: grid;
     grid-template-columns: 99%;
-  }
-}
-@media (max-width: 37.5em) {
-  .section__philosophycover .philosophy__upper {
-    width: 100%;
   }
 }
 @media (max-width: 75em) {

@@ -425,26 +425,26 @@ tabsContainer?.addEventListener('click', function (e) {
 
 
 //Back to Top-------------------------------------------------------------------------
-var btn = $('#button');
+// var btn = $('#button');
 
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 400) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
+// $(window).scroll(function() {
+//   if ($(window).scrollTop() > 400) {
+//     btn.addClass('show');
+//   } else {
+//     btn.removeClass('show');
+//   }
+// });
 
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '400');
-});
-
-
+// btn.on('click', function(e) {
+//   e.preventDefault();
+//   $('html, body').animate({scrollTop:0}, '400');
+// });
 
 
 
-const backtoTop = document('.top');
+
+
+const backtoTop = document.querySelector('.top');
 const headerCheck = document.querySelector('.otherlinks');
 
 const rootEle = document.documentElement;
@@ -482,6 +482,8 @@ const scrollToDown = () => {
 }
 backtoTop?.addEventListener('click', scrollToTop);
 btnScrollTo?.addEventListener('click', scrollToDown);
+
+
 //Child Care Calculator -----------------------------------------------------
 //Family income
 
