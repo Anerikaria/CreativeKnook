@@ -244,70 +244,32 @@ textarea:focus {
   opacity: 0;
 }
 
-#button {
-  display: inline-block;
-  background-color: #FF9800;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
+.top {
   opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-}
-#button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
-#button:hover {
+  // --offset: 2rem;
+  position: fixed;
+  bottom: 3.5rem;
+  right: 4rem;
+  place-self: end;
+  // margin-top: calc(100vh + var(--offset));
   cursor: pointer;
-  background-color: #333;
-}
-#button:active {
-  background-color: #555;
-}
-#button.show {
-  opacity: 1;
-  visibility: visible;
-}
+  /* visual styling */
+  width: 6rem;
+  box-shadow: $box-shadow-big;
+  aspect-ratio: 1;
+  background: $color-like-nav;
+  border-radius: 10px;
 
-/* Styles for the content section */
-
-.content {
-  width: 77%;
-  margin: 50px auto;
-  font-family: 'Merriweather', serif;
-  font-size: 17px;
-  color: #6c767a;
-  line-height: 1.9;
-}
-@media (min-width: 500px) {
-  .content {
-    width: 43%;
-  }
-  #button {
-    margin: 30px;
+  &:before {
+    content: '';
+    position: absolute;
+    inset: 30%;
+    transform: translateY(20%) rotate(-45deg);
+    border-top: 0.5rem ridge rgb(102, 98, 98);
+    border-right: 0.5rem ridge rgb(74, 62, 62);
   }
 }
-.content h1 {
-  margin-bottom: -10px;
-  color: #03a9f4;
-  line-height: 1.5;
-}
-.content h3 {
-  font-style: italic;
-  color: #96a2a7;
-}
+
 .linkcolor{
   text-decoration: none;
   color: $color-tertiary-darker;
