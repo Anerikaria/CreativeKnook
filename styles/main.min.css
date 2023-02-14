@@ -704,7 +704,7 @@ body {
 @media (max-width: 37.5em) {
   .features-figure {
     height: 5rem;
-    width: 5rem;
+    width: rem;
   }
 }
 .features__header {
@@ -878,7 +878,7 @@ body {
 @media (max-width: 37.5em) {
   .features-figure {
     height: 5rem;
-    width: 5rem;
+    width: rem;
   }
 }
 .features__header {
