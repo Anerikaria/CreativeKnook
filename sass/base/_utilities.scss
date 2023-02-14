@@ -141,16 +141,14 @@
   padding-left: 5rem;
 
   @include respond(normal) {
-    padding-left: 4rem;
-  }
-  @include respond(tab-land) {
     padding-left: 3rem;
   }
+  
   @include respond(tab-port) {
     padding-left: 2rem;
   }
   @include respond(phone) {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
   }
 }
 

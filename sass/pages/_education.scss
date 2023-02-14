@@ -107,6 +107,9 @@
   &__para{
     &-semi{
       font-size: $font-size-normal-elememt-normal;
+      @include respond(phone){
+        font-size: $font-size-element;
+      }
     }
       &--list{
         font-size: $font-size-normal-elememt-normal;
@@ -114,6 +117,9 @@
         justify-content: space-around;
         @include respond(tab-land){
           display: grid;
+        }
+        @include respond(phone){
+          font-size: $font-size-element;
         }
         li{
           padding-right: 2.2rem;
@@ -289,14 +295,17 @@
       font-size: $font-size-normal-elememt;
       
     }
-    @include respond(tab-land){
-      padding: 1rem 5rem;
-      // p{
-      //   ul{
-      //     justify-self: center;
-      //   }
-      // }
+    @include respond(phone){
+      font-size: $font-size-element;
     }
+    // @include respond(tab-land){
+    //   padding: 1rem 5rem;
+    //   p{
+    //     ul{
+    //       justify-self: center;
+    //     }
+    //   }
+    // }
     
       }
 }

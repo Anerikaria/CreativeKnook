@@ -374,11 +374,6 @@ body {
 }
 @media (max-width: 112.5em) {
   .u-padding-to-left {
-    padding-left: 4rem;
-  }
-}
-@media (max-width: 75em) {
-  .u-padding-to-left {
     padding-left: 3rem;
   }
 }
@@ -389,7 +384,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .u-padding-to-left {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
   }
 }
 
@@ -682,6 +677,11 @@ body {
   font-style: "Josefin Sans", serif;
   font-size: 2.2rem;
 }
+@media (max-width: 37.5em) {
+  .features__feature p {
+    font-size: 2.5rem;
+  }
+}
 .features .philosophy--img {
   height: 7rem;
   width: 7rem;
@@ -689,7 +689,6 @@ body {
 }
 @media (max-width: 37.5em) {
   .features .philosophy--img {
-    width: 10%;
     overflow-x: hidden;
   }
 }
@@ -856,6 +855,11 @@ body {
   font-style: "Josefin Sans", serif;
   font-size: 2.2rem;
 }
+@media (max-width: 37.5em) {
+  .features__feature p {
+    font-size: 2.5rem;
+  }
+}
 .features .philosophy--img {
   height: 7rem;
   width: 7rem;
@@ -863,7 +867,6 @@ body {
 }
 @media (max-width: 37.5em) {
   .features .philosophy--img {
-    width: 10%;
     overflow-x: hidden;
   }
 }
@@ -1518,7 +1521,7 @@ textarea:focus {
 }
 @media (max-width: 112.5em) {
   .accordion__1 .accordion-item-header, .accordion__3 .accordion-item-header {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 2.2rem;
   }
 }
@@ -1554,6 +1557,12 @@ textarea:focus {
 @media (max-width: 112.5em) {
   .accordion__1 .accordion-item-body-content, .accordion__3 .accordion-item-body-content {
     line-height: 3rem;
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .accordion__1 .accordion-item-body-content, .accordion__3 .accordion-item-body-content {
+    line-height: 3.2rem;
     font-size: 2.2rem;
   }
 }
@@ -1595,7 +1604,7 @@ textarea:focus {
 }
 @media (max-width: 112.5em) {
   .accordion__2 .accordion-item-header, .accordion__4 .accordion-item-header {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 2.2rem;
   }
 }
@@ -1631,6 +1640,12 @@ textarea:focus {
 @media (max-width: 112.5em) {
   .accordion__2 .accordion-item-body-content, .accordion__4 .accordion-item-body-content {
     line-height: 3rem;
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .accordion__2 .accordion-item-body-content, .accordion__4 .accordion-item-body-content {
+    line-height: 3.2rem;
     font-size: 2.2rem;
   }
 }
@@ -1809,7 +1824,7 @@ textarea:focus {
 
 .careerlink {
   margin-bottom: 4rem;
-  padding: 0 10rem;
+  padding: 0 5rem;
 }
 .careerlink__jointheteam-details h2 {
   font-size: 3.5rem;
@@ -2284,6 +2299,11 @@ textarea:focus {
 .operationsContent__para-semi {
   font-size: 2.2rem;
 }
+@media (max-width: 37.5em) {
+  .operationsContent__para-semi {
+    font-size: 2.5rem;
+  }
+}
 .operationsContent__para--list {
   font-size: 2.2rem;
   display: flex;
@@ -2292,6 +2312,11 @@ textarea:focus {
 @media (max-width: 75em) {
   .operationsContent__para--list {
     display: grid;
+  }
+}
+@media (max-width: 37.5em) {
+  .operationsContent__para--list {
+    font-size: 2.5rem;
   }
 }
 .operationsContent__para--list li {
@@ -2378,9 +2403,9 @@ textarea:focus {
     font-size: 2.2rem;
   }
 }
-@media (max-width: 75em) {
+@media (max-width: 37.5em) {
   .schlRediness-info {
-    padding: 1rem 5rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -3911,7 +3936,7 @@ textarea:focus {
 }
 @media (max-width: 112.5em) {
   .footer__item-sub {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
   }
 }
 .footer__item-sub a {
@@ -3951,7 +3976,7 @@ textarea:focus {
 }
 @media (max-width: 37.5em) {
   .footer__item-sub ul {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 37.5em) {
@@ -3982,7 +4007,7 @@ textarea:focus {
 }
 @media (max-width: 37.5em) and (max-width: 37.5em) {
   .footer__item-sub ul {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 56.25em) {
@@ -4013,7 +4038,7 @@ textarea:focus {
 }
 @media (max-width: 56.25em) and (max-width: 37.5em) {
   .footer__item-sub ul {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 75em) {
@@ -4044,7 +4069,7 @@ textarea:focus {
 }
 @media (max-width: 75em) and (max-width: 37.5em) {
   .footer__item-sub ul {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 112.5em) {
@@ -4075,7 +4100,7 @@ textarea:focus {
 }
 @media (max-width: 112.5em) and (max-width: 37.5em) {
   .footer__item-sub ul {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 }
 .footer__item-sub ul li a {

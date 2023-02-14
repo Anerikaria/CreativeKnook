@@ -172,7 +172,7 @@
         font-family: $font-family-some;
         font-size: 2.3rem;
         @include respond(normal){
-          font-size: 2rem;
+          font-size: 2.5rem;
           line-height: 2.2rem ;
         }
       }
@@ -213,6 +213,10 @@
             line-height: 3rem;
             font-size: $font-size-normal-elememt;
           }
+          @include respond(phone){
+            line-height: 3.2rem;
+            font-size: $font-size-normal-elememt-normal;
+          }
         }
       }
     }
@@ -248,7 +252,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   @include respond(phone){
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 }
 
