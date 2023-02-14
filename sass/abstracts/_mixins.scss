@@ -57,6 +57,10 @@
   align-self: center;
   @include respond(tab-land) {
     padding: 3rem;
+    
+  }
+  @include respond(phone){
+    width: 100%;
   }
 }
 
