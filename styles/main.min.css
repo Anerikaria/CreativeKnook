@@ -689,7 +689,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .features .philosophy--img {
-    width: 1.5rem;
+    width: 10%;
     overflow-x: hidden;
   }
 }
@@ -863,7 +863,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .features .philosophy--img {
-    width: 1.5rem;
+    width: 10%;
     overflow-x: hidden;
   }
 }
