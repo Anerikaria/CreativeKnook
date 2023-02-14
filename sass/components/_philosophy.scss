@@ -162,8 +162,8 @@
     
 
     @include respond(phone){
-      height: 7rem;
-      width: 7rem;
+      width: 1.5rem;
+      overflow-x: hidden;
     }
   }
   &-figure {

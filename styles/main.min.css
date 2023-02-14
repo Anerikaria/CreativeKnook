@@ -470,6 +470,7 @@ body {
 
 .philosophy-img {
   opacity: 1;
+  animation: movefromTopImg 2s ease-in 0.1s;
 }
 
 .col-1-of-1 {
@@ -688,8 +689,8 @@ body {
 }
 @media (max-width: 37.5em) {
   .features .philosophy--img {
-    height: 7rem;
-    width: 7rem;
+    width: 1.5rem;
+    overflow-x: hidden;
   }
 }
 .features-figure {
@@ -862,8 +863,8 @@ body {
 }
 @media (max-width: 37.5em) {
   .features .philosophy--img {
-    height: 7rem;
-    width: 7rem;
+    width: 1.5rem;
+    overflow-x: hidden;
   }
 }
 .features-figure {
