@@ -2914,8 +2914,13 @@ textarea:focus {
   background-color: #fff;
 }
 .nav__logo {
-  height: 9.5rem;
+  height: 9rem;
   transition: all 0.3s;
+}
+@media (max-width: 37.5em) {
+  .nav__logo {
+    height: 9.5rem;
+  }
 }
 .nav__links {
   display: flex;
@@ -3944,6 +3949,11 @@ textarea:focus {
   color: #088294;
 }
 @media (max-width: 112.5em) {
+  .footer__item-sub {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 37.5em) {
   .footer__item-sub {
     font-size: 2.2rem;
   }
