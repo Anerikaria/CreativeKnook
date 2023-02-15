@@ -468,7 +468,7 @@ body {
 }
 
 .animationnet {
-  animation: movefromTopImg 2s ease-in 0.1s;
+  animation: movefromTopImg 2.5s ease-in 0.1s;
 }
 
 .col-1-of-1 {
@@ -686,7 +686,7 @@ body {
   }
 }
 .features .philosophy--img {
-  height: 7rem;
+  height: 9rem;
   width: 7rem;
   text-align: center;
 }
@@ -864,7 +864,7 @@ body {
   }
 }
 .features .philosophy--img {
-  height: 7rem;
+  height: 9rem;
   width: 7rem;
   text-align: center;
 }
@@ -1359,6 +1359,11 @@ textarea:focus {
     font-size: 2.2rem;
   }
 }
+@media (max-width: 37.5em) {
+  .aboutitle .list-item {
+    font-size: 2.5rem;
+  }
+}
 .aboutitle .list-item::before {
   content: "";
   display: inline-block;
@@ -1566,7 +1571,7 @@ textarea:focus {
 @media (max-width: 37.5em) {
   .accordion__1 .accordion-item-body-content, .accordion__3 .accordion-item-body-content {
     line-height: 3.2rem;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 }
 .accordion__2 .accordion, .accordion__4 .accordion {
@@ -1649,7 +1654,7 @@ textarea:focus {
 @media (max-width: 37.5em) {
   .accordion__2 .accordion-item-body-content, .accordion__4 .accordion-item-body-content {
     line-height: 3.2rem;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -2175,7 +2180,7 @@ textarea:focus {
 }
 .covid19Que-item__que {
   display: flex;
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   color: #088294;
   padding-bottom: 1.5rem;
   line-height: 2rem;
@@ -2909,7 +2914,7 @@ textarea:focus {
   background-color: #fff;
 }
 .nav__logo {
-  height: 9rem;
+  height: 12rem;
   transition: all 0.3s;
 }
 .nav__links {
@@ -3517,7 +3522,7 @@ textarea:focus {
 
 .slider {
   max-width: 100rem;
-  height: 50rem;
+  height: 60rem;
   margin: 0 auto;
   position: relative;
   /* IN THE END */
@@ -3640,8 +3645,8 @@ textarea:focus {
   border-radius: 50%;
 }
 .testimonial__name {
-  font-size: 1.7rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 600;
   align-self: end;
   margin: 0;
 }
@@ -3710,6 +3715,7 @@ textarea:focus {
   display: flex;
   justify-content: center;
   font-size: 2.5rem;
+  font-weight: 600;
 }
 .section__Curriculum .curriculum__title p {
   font-size: 2.2rem;
@@ -4139,7 +4145,7 @@ textarea:focus {
 
 @media (max-width: 75em) {
   .footer__itemO {
-    padding-top: 5rem;
+    padding-top: 6.7rem;
   }
 }
 

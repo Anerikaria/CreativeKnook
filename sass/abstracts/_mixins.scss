@@ -215,7 +215,7 @@
           }
           @include respond(phone){
             line-height: 3.2rem;
-            font-size: $font-size-normal-elememt-normal;
+            font-size: $font-size-element;
           }
         }
       }
