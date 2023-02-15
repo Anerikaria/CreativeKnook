@@ -467,6 +467,10 @@ body {
   opacity: 1;
 }
 
+.animationnet {
+  animation: movefromTopImg 2s ease-in 0.1s;
+}
+
 .col-1-of-1 {
   display: flex;
   justify-content: center;
