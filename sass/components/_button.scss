@@ -246,12 +246,12 @@ textarea:focus {
 
 .top {
   opacity: 0;
-  // --offset: 2rem;
+   --offset: 1rem;
   position: fixed;
   bottom: 3.5rem;
   right: 4rem;
   place-self: end;
-  // margin-top: calc(100vh + var(--offset));
+  margin-top: calc(100vh + var(--offset));
   cursor: pointer;
   /* visual styling */
   width: 6rem;
@@ -259,6 +259,7 @@ textarea:focus {
   aspect-ratio: 1;
   background: $color-like-nav;
   border-radius: 10px;
+  z-index: 900;
 
   &:before {
     content: '';

@@ -374,11 +374,6 @@ body {
 }
 @media (max-width: 112.5em) {
   .u-padding-to-left {
-    padding-left: 4rem;
-  }
-}
-@media (max-width: 75em) {
-  .u-padding-to-left {
     padding-left: 3rem;
   }
 }
@@ -389,7 +384,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .u-padding-to-left {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
   }
 }
 
@@ -470,7 +465,10 @@ body {
 
 .philosophy-img {
   opacity: 1;
-  animation: movefromTopImg 2s ease-in 0.1s;
+}
+
+.animationnet {
+  animation: movefromTopImg 2.5s ease-in 0.1s;
 }
 
 .col-1-of-1 {
@@ -682,14 +680,18 @@ body {
   font-style: "Josefin Sans", serif;
   font-size: 2.2rem;
 }
+@media (max-width: 37.5em) {
+  .features__feature p {
+    font-size: 2.5rem;
+  }
+}
 .features .philosophy--img {
-  height: 7rem;
+  height: 9rem;
   width: 7rem;
   text-align: center;
 }
 @media (max-width: 37.5em) {
   .features .philosophy--img {
-    width: 10%;
     overflow-x: hidden;
   }
 }
@@ -856,14 +858,18 @@ body {
   font-style: "Josefin Sans", serif;
   font-size: 2.2rem;
 }
+@media (max-width: 37.5em) {
+  .features__feature p {
+    font-size: 2.5rem;
+  }
+}
 .features .philosophy--img {
-  height: 7rem;
+  height: 9rem;
   width: 7rem;
   text-align: center;
 }
 @media (max-width: 37.5em) {
   .features .philosophy--img {
-    width: 10%;
     overflow-x: hidden;
   }
 }
@@ -1150,10 +1156,12 @@ textarea:focus {
 
 .top {
   opacity: 0;
+  --offset: 1rem;
   position: fixed;
   bottom: 3.5rem;
   right: 4rem;
   place-self: end;
+  margin-top: calc(100vh + var(--offset));
   cursor: pointer;
   /* visual styling */
   width: 6rem;
@@ -1161,6 +1169,7 @@ textarea:focus {
   aspect-ratio: 1;
   background: #ef5552;
   border-radius: 10px;
+  z-index: 900;
 }
 .top:before {
   content: "";
@@ -1350,6 +1359,11 @@ textarea:focus {
     font-size: 2.2rem;
   }
 }
+@media (max-width: 37.5em) {
+  .aboutitle .list-item {
+    font-size: 2.5rem;
+  }
+}
 .aboutitle .list-item::before {
   content: "";
   display: inline-block;
@@ -1515,7 +1529,7 @@ textarea:focus {
 }
 @media (max-width: 112.5em) {
   .accordion__1 .accordion-item-header, .accordion__3 .accordion-item-header {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 2.2rem;
   }
 }
@@ -1552,6 +1566,12 @@ textarea:focus {
   .accordion__1 .accordion-item-body-content, .accordion__3 .accordion-item-body-content {
     line-height: 3rem;
     font-size: 2.2rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .accordion__1 .accordion-item-body-content, .accordion__3 .accordion-item-body-content {
+    line-height: 3.2rem;
+    font-size: 2.5rem;
   }
 }
 .accordion__2 .accordion, .accordion__4 .accordion {
@@ -1592,7 +1612,7 @@ textarea:focus {
 }
 @media (max-width: 112.5em) {
   .accordion__2 .accordion-item-header, .accordion__4 .accordion-item-header {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 2.2rem;
   }
 }
@@ -1629,6 +1649,12 @@ textarea:focus {
   .accordion__2 .accordion-item-body-content, .accordion__4 .accordion-item-body-content {
     line-height: 3rem;
     font-size: 2.2rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .accordion__2 .accordion-item-body-content, .accordion__4 .accordion-item-body-content {
+    line-height: 3.2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -1806,7 +1832,7 @@ textarea:focus {
 
 .careerlink {
   margin-bottom: 4rem;
-  padding: 0 10rem;
+  padding: 0 5rem;
 }
 .careerlink__jointheteam-details h2 {
   font-size: 3.5rem;
@@ -1817,7 +1843,7 @@ textarea:focus {
 }
 .careerlink__jointheteam-details p {
   padding-top: 5rem;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-family: "Josefin Sans", serif;
 }
 
@@ -2154,7 +2180,7 @@ textarea:focus {
 }
 .covid19Que-item__que {
   display: flex;
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   color: #088294;
   padding-bottom: 1.5rem;
   line-height: 2rem;
@@ -2281,6 +2307,11 @@ textarea:focus {
 .operationsContent__para-semi {
   font-size: 2.2rem;
 }
+@media (max-width: 37.5em) {
+  .operationsContent__para-semi {
+    font-size: 2.5rem;
+  }
+}
 .operationsContent__para--list {
   font-size: 2.2rem;
   display: flex;
@@ -2289,6 +2320,11 @@ textarea:focus {
 @media (max-width: 75em) {
   .operationsContent__para--list {
     display: grid;
+  }
+}
+@media (max-width: 37.5em) {
+  .operationsContent__para--list {
+    font-size: 2.5rem;
   }
 }
 .operationsContent__para--list li {
@@ -2375,9 +2411,9 @@ textarea:focus {
     font-size: 2.2rem;
   }
 }
-@media (max-width: 75em) {
+@media (max-width: 37.5em) {
   .schlRediness-info {
-    padding: 1rem 5rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -2881,6 +2917,11 @@ textarea:focus {
   height: 9rem;
   transition: all 0.3s;
 }
+@media (max-width: 37.5em) {
+  .nav__logo {
+    height: 9.5rem;
+  }
+}
 .nav__links {
   display: flex;
   align-items: center;
@@ -3299,11 +3340,6 @@ textarea:focus {
     grid-template-columns: 99%;
   }
 }
-@media (max-width: 37.5em) {
-  .section__philosophycover .philosophy__upper {
-    width: 100%;
-  }
-}
 @media (max-width: 75em) {
   .section__philosophycover .philosophy__upper {
     margin: 2rem;
@@ -3491,7 +3527,7 @@ textarea:focus {
 
 .slider {
   max-width: 100rem;
-  height: 50rem;
+  height: 54rem;
   margin: 0 auto;
   position: relative;
   /* IN THE END */
@@ -3614,8 +3650,8 @@ textarea:focus {
   border-radius: 50%;
 }
 .testimonial__name {
-  font-size: 1.7rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 600;
   align-self: end;
   margin: 0;
 }
@@ -3684,6 +3720,7 @@ textarea:focus {
   display: flex;
   justify-content: center;
   font-size: 2.5rem;
+  font-weight: 600;
 }
 .section__Curriculum .curriculum__title p {
   font-size: 2.2rem;
@@ -3913,7 +3950,12 @@ textarea:focus {
 }
 @media (max-width: 112.5em) {
   .footer__item-sub {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .footer__item-sub {
+    font-size: 2.2rem;
   }
 }
 .footer__item-sub a {
@@ -3953,7 +3995,7 @@ textarea:focus {
 }
 @media (max-width: 37.5em) {
   .footer__item-sub ul {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 37.5em) {
@@ -3984,7 +4026,7 @@ textarea:focus {
 }
 @media (max-width: 37.5em) and (max-width: 37.5em) {
   .footer__item-sub ul {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 56.25em) {
@@ -4015,7 +4057,7 @@ textarea:focus {
 }
 @media (max-width: 56.25em) and (max-width: 37.5em) {
   .footer__item-sub ul {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 75em) {
@@ -4046,7 +4088,7 @@ textarea:focus {
 }
 @media (max-width: 75em) and (max-width: 37.5em) {
   .footer__item-sub ul {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 112.5em) {
@@ -4077,7 +4119,7 @@ textarea:focus {
 }
 @media (max-width: 112.5em) and (max-width: 37.5em) {
   .footer__item-sub ul {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 }
 .footer__item-sub ul li a {
@@ -4113,7 +4155,7 @@ textarea:focus {
 
 @media (max-width: 75em) {
   .footer__itemO {
-    padding-top: 5rem;
+    padding-top: 6.7rem;
   }
 }
 

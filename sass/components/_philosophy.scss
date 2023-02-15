@@ -150,11 +150,14 @@
     p {
       font-style: $font-family;
       font-size: $font-size-normal-elememt-normal;
+      @include respond(phone){
+        font-size: $font-size-element
+      }
     }
   }
 
   .philosophy--img{
-    height: 7rem;
+    height: 9rem;
     width: 7rem;
     text-align: center;
 
@@ -162,7 +165,6 @@
     
 
     @include respond(phone){
-      width: 10%;
       overflow-x: hidden;
     }
   }

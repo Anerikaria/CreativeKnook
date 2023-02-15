@@ -77,7 +77,10 @@
         color: $color-tertiary-darker;
          
         @include respond(normal){
-          font-size: $font-size-small;
+          font-size: 1.9rem;
+        }
+        @include respond(phone){
+          font-size: $font-size-normal-elememt;
         }
         a{
           text-decoration: none;
@@ -145,7 +148,7 @@
 
   .footer__itemO {
     @include respond(tab-land) {
-      padding-top: 5rem;
+      padding-top: 6.7rem;
     }
   }
   .footer-div1 {

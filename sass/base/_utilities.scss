@@ -141,16 +141,14 @@
   padding-left: 5rem;
 
   @include respond(normal) {
-    padding-left: 4rem;
-  }
-  @include respond(tab-land) {
     padding-left: 3rem;
   }
+  
   @include respond(tab-port) {
     padding-left: 2rem;
   }
   @include respond(phone) {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
   }
 }
 
@@ -216,7 +214,12 @@
 
 .philosophy-img {
   opacity: 1;
-  animation: movefromTopImg 2s ease-in 0.1s;
+  // animation: movefromTopImg 2s ease-in 0.1s;
+}
+
+.animationnet{
+     animation: movefromTopImg 2.5s ease-in 0.1s;
+
 }
 
 .col-1-of-1 {

@@ -19,6 +19,9 @@
     @include respond(normal){
       font-size: $font-size-normal-elememt;
     }
+    @include respond(phone){
+      font-size: $font-size-element;
+    }
     
   }
   .list-item::before {

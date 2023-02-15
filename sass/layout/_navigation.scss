@@ -341,6 +341,10 @@
     }
 
     &__logo {
+      @include respond(phone){
+        height: 9.5rem;
+
+      }
       height: 9rem;
       transition: all 0.3s;
     }
