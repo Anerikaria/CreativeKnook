@@ -1843,7 +1843,7 @@ textarea:focus {
 }
 .careerlink__jointheteam-details p {
   padding-top: 5rem;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-family: "Josefin Sans", serif;
 }
 
@@ -2914,7 +2914,7 @@ textarea:focus {
   background-color: #fff;
 }
 .nav__logo {
-  height: 12rem;
+  height: 9.5rem;
   transition: all 0.3s;
 }
 .nav__links {
@@ -3522,7 +3522,7 @@ textarea:focus {
 
 .slider {
   max-width: 100rem;
-  height: 60rem;
+  height: 54rem;
   margin: 0 auto;
   position: relative;
   /* IN THE END */
