@@ -1,0 +1,2 @@
+Sitemap: <XML URL>
+User-agent: *
