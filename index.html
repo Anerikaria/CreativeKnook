@@ -23,7 +23,8 @@
 <!--SEO Implementation-->
   <meta name="keywords" content="childcare,childcares,child care,child cares,daycare,daycares,day care,day cares,early learning center,early learning centre,macquarie fields"/>
   <meta name="description" content="At Creative Nook Early Learning Center, We Specialise in high quality education programs where children will thrive, be creative and develop social confidence." />
-	
+	<meta name="robots" content="index,follow"/>
+
   <link rel="canonical" href="https://www.creativenookearlylearning.com.au/" />
 
 <!--  Essential META Tags -->
@@ -93,7 +94,7 @@
             for their better future.
           </p>
           <div>
-            <a href="/childcare/about.html" class="butn butn--whyus">
+            <a href="/childcare/about-creative-nook.html" class="butn butn--whyus">
               <span> Learn more &rightarrow;</span>
             </a>
           </div>
@@ -366,6 +367,92 @@
     </section>
 
     <div id = "footer-container"></div>
+    <div class="paddingformodal">
+      <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <br/>
+        <h2 class="modal__header">Fill the form to Enroll here</h2>
+        <h1>(Note:- Require feilds marks as <span>*</span>)</h1>
+        <br /><br />
+        <form method="POST" action="https://api.web3forms.com/submit"
+        class="modal__form">
+
+          <input type="hidden" name="access_key" value="3ebff317-c509-444a-b6f0-ccf3223f8461">
+          <input type="hidden" name="subject" value="Enroll Form">
+          <input type="checkbox" name="botcheck" id="" style="display: none;">
+          <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+
+          <label for="fname">First Name <span>*</span> </label>
+          <input type="text" id="fname" placeholder="First Name" name="First Name" required />
+          <label for="lname">Last Name </label>
+          <input type="text" id="lname" placeholder="Last Name" name="Last Name"  />
+          <label for="email">Email <span>*</span> </label>
+          <input type="email" id="email" placeholder="Email" name="Email" required />
+          <label for="cnumber">Contact Number <span>*</span> </label>
+          <input type="phone" maxlength="10" id="cnumber" name="Contact Number" placeholder="Contact Number" required />
+          <label for="dropdownitem">How did you hear about us <span>*</span></label>
+          <select name="How did you know about Us" id="dropdownitem" class="select select__dropdown" required>
+            <option value="">How did you hear about us</option>
+            <option value="Social-media">social-media</option>
+            <option value="friend">friend</option>
+            <option value="news-article">news article</option>
+            <option value="website">website</option>
+            <option value="Google-search">Google search</option>
+            <option value="not-Here">not mentioned here</option>
+          </select>
+          <label for="days">How many days required <span>*</span></label>
+          <input
+            type="text"
+            id="days"
+            placeholder="Days Required(ex. Monday, Tuesday...)"
+            name="How many days required"
+            required
+          />
+
+          
+          <label for="fullName">Your child Full name <span>*</span></label>
+          <input
+            type="text"
+            id="fullName"
+            placeholder="Child Full Name"
+            name="Child Full Name"
+            required
+          />
+          <label for="DateofBirth">Date of Birth <span>*</span></label>
+          <input
+            type="date"
+            id="DateofBirth"
+            placeholder="Date of Birth"
+            name="Child Date Of Birth"
+            required
+          />
+          <label for="DateofStart">Require Start Date <span>*</span></label>
+          <input
+            type="date"
+            id="DateofStart"
+            name="Date Of Start"
+            placeholder="Require Start date"
+            min="1/1/2023"
+            max="31/12/2023"
+            required
+          />
+          <label for="message">Write detials that we need to know</label>
+          <textarea
+            placeholder="write here..."
+            name="More Details"
+            id="message"
+            cols="30"
+            rows="5"
+          ></textarea>
+          <button class="btn btn--submit">Submit</button>
+
+          <div id="result" class="forsomepara"> </div>
+
+          </form>
+
+          </div>
+        </div>
+        <div class="overlay hidden"></div>
 
     <script src="https://www.google.com/recaptcha/api.js?render=6LckV0ckAAAAAK9hGwHNHyL2Y_E2sYc4DVzTs9II"></script>
 <script>
