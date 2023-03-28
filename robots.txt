@@ -1,2 +1,2 @@
-Sitemap: <XML URL>
+Sitemap: <XML URL> --Need to ge XML files and change this file
 User-agent: *
