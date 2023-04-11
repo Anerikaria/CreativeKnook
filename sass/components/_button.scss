@@ -89,6 +89,10 @@
 .btn__waitlist {
   margin-bottom: 5rem;
   color: $color-primary;
+  a{
+    text-decoration: none;
+    color: $color-primary;
+  }
 }
 
 
