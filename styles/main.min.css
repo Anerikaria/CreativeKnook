@@ -997,6 +997,9 @@ body {
   text-decoration: none;
   color: #eb1464;
 }
+.btn__waitlist a:hover, .btn__waitlist a:focus {
+  color: #fff;
+}
 
 .butn {
   border: none;
