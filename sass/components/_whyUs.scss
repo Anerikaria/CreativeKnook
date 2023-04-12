@@ -40,7 +40,6 @@
   .why-us--img {
     width: 97%;
     border-radius: 5rem;
-    box-shadow: $box-shadow;
     object-fit: cover;
     // object-position: 50% 50%;
     @include respond(normal) {

@@ -908,7 +908,8 @@ body {
   justify-content: center;
   margin-top: 2rem;
 }
-.btn__learnmore a {
+
+.header__link {
   text-decoration: none;
 }
 
@@ -1001,6 +1002,10 @@ body {
   color: #fff;
 }
 
+.button--readmore {
+  text-decoration: none;
+}
+
 .butn {
   border: none;
   border-radius: 2.5rem;
@@ -1010,6 +1015,10 @@ body {
 }
 .butn:hover {
   transform: scale(90%);
+}
+
+.readlink {
+  text-decoration: none;
 }
 
 /* MODAL WINDOW */
@@ -1905,7 +1914,6 @@ textarea:focus {
 .teamimage__img {
   max-width: 100%;
   border-radius: 12rem;
-  box-shadow: 0 2rem 9rem rgba(0, 0, 0, 0.8);
   width: 100%;
   height: 60%;
 }
@@ -2096,9 +2104,6 @@ textarea:focus {
 .styled-checkbox:hover + label:before {
   border: 0.3rem ridge #ef5552;
 }
-.styled-checkbox:focus + label:before {
-  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
-}
 .styled-checkbox:checked + label:before {
   background-color: #ef5552;
 }
@@ -2178,7 +2183,7 @@ textarea:focus {
 }
 .covid19Que-item {
   width: 100%;
-  box-shadow: 0 0 6rem rgba(0, 0, 0, 0.5);
+  background-color: rgba(243, 250, 252, 0.5803921569);
   margin: 5rem 0;
   line-height: 3rem;
   padding: 5rem;
@@ -3264,7 +3269,6 @@ textarea:focus {
 .section__whyus .why-us--img {
   width: 97%;
   border-radius: 5rem;
-  box-shadow: 0 0 6rem rgba(0, 0, 0, 0.5);
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -3675,7 +3679,7 @@ textarea:focus {
   justify-self: center;
   margin-top: 2rem;
   background-color: #fff;
-  box-shadow: 0.1rem 3rem 4rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0.1rem 3rem 4rem rgba(0, 0, 0, 0.03);
   border-radius: 4rem;
 }
 @media (max-width: 112.5em) {
@@ -3693,7 +3697,7 @@ textarea:focus {
   justify-self: center;
   margin-top: 2rem;
   background-color: #fff;
-  box-shadow: 0.1rem 3rem 4rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0.1rem 3rem 4rem rgba(0, 0, 0, 0.03);
   border-radius: 4rem;
 }
 @media (max-width: 112.5em) {
@@ -3711,7 +3715,7 @@ textarea:focus {
   justify-self: center;
   margin-top: 2rem;
   background-color: #fff;
-  box-shadow: 0.1rem 3rem 4rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0.1rem 3rem 4rem rgba(0, 0, 0, 0.03);
   border-radius: 4rem;
 }
 @media (max-width: 112.5em) {

@@ -12,10 +12,10 @@
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-  a{
-    text-decoration: none;
-  }
-}
+ }
+ .header__link{
+  text-decoration: none;
+ }
 .btn,
 .btn:link,
 .btn:visited {
@@ -63,6 +63,7 @@
   box-shadow: $box-shadow;
 }
 
+
 .btn--learnMore {
   justify-content: center;
   background-color: $color-white;
@@ -98,7 +99,9 @@
   }
 }
 
-
+.button--readmore{
+  text-decoration: none;
+}
 .butn {
   border: none;
   border-radius: 2.5rem;
@@ -111,6 +114,9 @@
   }
 }
 
+.readlink{
+  text-decoration: none;
+}
 
 /* MODAL WINDOW */
 .modal {

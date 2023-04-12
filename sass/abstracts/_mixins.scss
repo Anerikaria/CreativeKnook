@@ -89,7 +89,7 @@
   justify-self: center;
   margin-top: 2rem;
   background-color: $color-white;
-  box-shadow: 0.1rem 3rem 4rem rgb($color: #000, $alpha: 0.5);
+  box-shadow: 0.1rem 3rem 4rem rgb($color: #000, $alpha: 0.03);
   border-radius: $borderradiusfourrem;
   @include respond(normal){
     height: 59rem;
