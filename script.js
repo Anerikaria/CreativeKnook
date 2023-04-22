@@ -1,7 +1,6 @@
 const sectionIntro = document.getElementById('#section--Intro');
 const header = document.querySelector('.header');
 const nav = document.querySelector('.nav');
-const navHeight = nav.getBoundingClientRect().height;
 const btnScrollTo = document.querySelector('.btn--scroll-to');
 const section1= document.querySelector('.section__otherlinks');
 
@@ -30,7 +29,7 @@ const overlay = document.querySelector('.overlay');
 const btnCloseModal = document.querySelector('.btn--close-modal');
 const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
 
-const fname = document.getElementById('fname').value;
+// const fname = document.getElementById('fname').value;
 
 // const lastName = document.getElementById('lname');
 // const email = document.getElementById('email');
@@ -52,81 +51,13 @@ let messageText =[]
 
 
 
-//Sticky navigation
-//Sticky Navigation: Intersection Observer API
-
-// const headerObserver = new IntersectionObserver(stickyNav, {});
-// console.log(headerObserver);
-// headerObserver.observe(nav);
-
-//******************************************************************** */
-
-//sections animation using reavealing element on scroll
-
-// const revealSection = function (entries, observer) {
-//   const [entry] = entries;
-//   console.log(entry);
-//   if (!entry.isIntersecting) return;
-//   entry.target.classList.remove('u-section--hidden');
-// };
-
-// const sectionObserver = new IntersectionObserver(revealSection, {
-//   root: null,
-//   threshold: 0.12,
-// });
-// sections.forEach(function (section) {
-//   sectionObserver.observe(section);
-//   section.classList.add('u-section--hidden');
-// });
-
-//********************************************************************* */
-
-//Navigation for phone------------------------------------------------------------
-
-
-
-///////////////////////////////////////
-// Button scrolling
-// btnScrollTo?.addEventListener('click', function (e) {
-//   const s1coords = section1.getBoundingClientRect();
-//   console.log(s1coords);
-
-//   console.log(e.target.getBoundingClientRect());
-
-//   console.log('Current scroll (X/Y)', window.pageXOffset, window.pageYOffset);
-
-//   console.log(
-//     'height/width viewport',
-//     document.documentElement.clientHeight,
-//     document.documentElement.clientWidth
-//   );
-
-//   section1.scrollIntoView({ behavior: 'smooth' });
-// });
-
-//why-Us animation using Intersection Observer API
-
-// const chkwhyUs = function (entry) {
-//   if (entry.intersectionRatio > 0) {
-//     entry.target.classList.add('philosophy--three');
-//   } else if (!entry.isIntersecting) {
-//     return;
-//   }
-// };
-
-// let sectWhyUS = new IntersectionObserver(chkwhyUs);
-
-// sectWhyUS.observe(whyUs);
-
-//*********************************************************************************** */
-
 //validations
-const validation = function(){
-  //common for all forms
-  if(fname.value === '' || fname.value == null){
-    validationText.innerText = 'There was a problem with your submission. Please make sure * mentioned fields are not empty'
-  }
-  }
+// const validation = function(){
+//   //common for all forms
+//   if(fname.value === '' || fname.value == null){
+//     validationText.innerText = 'There was a problem with your submission. Please make sure * mentioned fields are not empty'
+//   }
+//   }
 
 
 
@@ -420,26 +351,6 @@ tabsContainer?.addEventListener('click', function (e) {
     .querySelector(`.operations__content--${clicked.dataset.tab}`)
     .classList.add('operations__content--active');
 });
-
-
-
-
-//Back to Top-------------------------------------------------------------------------
-// var btn = $('#button');
-
-// $(window).scroll(function() {
-//   if ($(window).scrollTop() > 400) {
-//     btn.addClass('show');
-//   } else {
-//     btn.removeClass('show');
-//   }
-// });
-
-// btn.on('click', function(e) {
-//   e.preventDefault();
-//   $('html, body').animate({scrollTop:0}, '400');
-// });
-
 
 
 

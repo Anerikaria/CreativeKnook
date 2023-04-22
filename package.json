@@ -4,7 +4,8 @@
   "description": "childcare",
   "main": "script.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss styles/main.min.css -w"
+    "compile:sass": "node-sass sass/main.scss styles/main.min.css -w",
+    "start": "script.js"
   },
   "author": "Aneri Karia",
   "license": "ISC",
